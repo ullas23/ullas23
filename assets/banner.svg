@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" width="860" height="380">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&amp;display=swap');
+
+      .terminal-bg { fill: #0d0d0d; }
+      .window-bar { fill: #1a1a1a; }
+      .btn-red { fill: #ff5f57; }
+      .btn-yellow { fill: #ffbd2e; }
+      .btn-green { fill: #28c840; }
+      .title-text { fill: #666; font-family: 'Fira Code', monospace; font-size: 12px; }
+      .prompt { fill: #00FF41; font-family: 'Fira Code', monospace; font-size: 13.5px; }
+      .dim { fill: #4a8f5a; font-family: 'Fira Code', monospace; font-size: 13.5px; }
+      .white { fill: #cccccc; font-family: 'Fira Code', monospace; font-size: 13.5px; }
+      .cursor-blink {
+        fill: #00FF41;
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      /* Typing animation lines */
+      .line1 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 0.2s; }
+      .line2 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 0.8s; }
+      .line3 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 1.4s; }
+      .line4 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 2.0s; }
+      .line5 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 2.5s; }
+      .line6 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 3.0s; }
+      .line7 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 3.4s; }
+      .line8 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 3.8s; }
+      .line9 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 4.2s; }
+      .cursor-line { opacity: 0; animation: fadeIn 0.1s ease forwards; animation-delay: 4.5s; }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(2px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .glow {
+        filter: drop-shadow(0 0 6px rgba(0, 255, 65, 0.5));
+      }
+    </style>
+
+    <!-- Border glow filter -->
+    <filter id="borderGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0   0 1 0 0 0   0 0 0 0 0   0 0 0 0.5 0" result="greenGlow"/>
+      <feMerge>
+        <feMergeNode in="greenGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Terminal window -->
+  <rect x="10" y="10" width="840" height="360" rx="12" ry="12" class="terminal-bg" filter="url(#borderGlow)"/>
+  <rect x="10" y="10" width="840" height="360" rx="12" ry="12" fill="none" stroke="#00FF41" stroke-width="0.8" stroke-opacity="0.4"/>
+
+  <!-- Title bar -->
+  <rect x="10" y="10" width="840" height="36" rx="12" ry="12" class="window-bar"/>
+  <rect x="10" y="28" width="840" height="18" class="window-bar"/>
+
+  <!-- Window buttons -->
+  <circle cx="36" cy="28" r="7" class="btn-red"/>
+  <circle cx="58" cy="28" r="7" class="btn-yellow"/>
+  <circle cx="80" cy="28" r="7" class="btn-green"/>
+
+  <!-- Title -->
+  <text x="430" y="33" text-anchor="middle" class="title-text">ullas@github — bash — 80×24</text>
+
+  <!-- Separator line -->
+  <line x1="10" y1="46" x2="850" y2="46" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- Terminal content -->
+  <g class="line1">
+    <text x="32" y="80" class="prompt">❯ </text>
+    <text x="52" y="80" class="white">ssh ullas@github</text>
+  </g>
+
+  <g class="line2">
+    <text x="32" y="104" class="dim">Password:</text>
+    <text x="118" y="104" class="white">••••••••</text>
+  </g>
+
+  <g class="line3">
+    <text x="32" y="128" class="prompt" font-weight="500">Access Granted.</text>
+  </g>
+
+  <g class="line4">
+    <text x="32" y="152" class="dim">Initializing Security Workspace...</text>
+  </g>
+
+  <g class="line5">
+    <text x="32" y="172" class="dim">Loading Threat Intelligence...</text>
+  </g>
+
+  <g class="line6">
+    <text x="32" y="192" class="dim">Loading Active Projects...</text>
+  </g>
+
+  <g class="line7">
+    <text x="32" y="212" class="dim">Loading Incident Response Playbooks...</text>
+  </g>
+
+  <g class="line8">
+    <text x="32" y="236" class="prompt" font-weight="500">Done.</text>
+  </g>
+
+  <g class="line9">
+    <text x="32" y="266" class="dim">─────────────────────────────────────────────────</text>
+  </g>
+
+  <!-- Blinking cursor at bottom -->
+  <g class="cursor-line">
+    <text x="32" y="298" class="prompt">❯ </text>
+    <rect x="52" y="284" width="9" height="16" rx="1" class="cursor-blink"/>
+  </g>
+
+  <!-- Bottom padding line -->
+  <text x="32" y="340" class="dim" opacity="0.3">ullas@github:~$</text>
+</svg>
