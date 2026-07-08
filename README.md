@@ -1,12 +1,11 @@
 <div align="center">
 
-<!-- Animated Typing -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=00FF41&center=true&vCenter=true&width=850&lines=Whitish-Grey+Hat+Hacker;Purple+Team+Enthusiast;Building+Security+Solutions;Learning+Never+Stops.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=00FF41&center=true&vCenter=true&width=900&lines=Building+Secure+Systems...;Learning+Offensive+Techniques...;Thinking+Like+an+Attacker...;Defending+Like+an+Engineer...;Purple+Team+Enthusiast.)](https://git.io/typing-svg)
 
 </div>
 
 ```bash
-> ssh ullas@github
+> ssh ullas23@github
 
 Password: ********
 
@@ -21,7 +20,7 @@ Done.
 
 # Ullas T S
 
-> *Inspired by Mr. Robot, but I actually talk to people.*
+> *Curious enough to think like an attacker. Responsible enough to build for defenders.*
 
 ```text
 root@github:~$ whoami
@@ -35,7 +34,17 @@ Platform    : Linux | Windows
 Lifestyle   : Basketball | CTFs
 Status      : Learning...
 ```
-## 🖥 Mission Control
+
+```text
+Experience Snapshot
+
+✓ Built an AI-powered SIEM
+✓ Built an award-winning secure examination platform
+✓ Cofounded a cybersecurity technical club
+✓ Conducted and participated in workshops & CTFs
+✓ National Hackathon Awardee
+```
+## Mission Control
 
 ```bash
 root@github:~$ ./mission-control
@@ -67,11 +76,11 @@ Status        : Online
 
 [ CURRENT MISSION ]
 
-Designing security solutions that detect, analyze,
-and respond to modern cyber threats while continuously
-learning how attackers think.
+Designing security solutions that detect,
+analyze and respond to modern cyber threats
+while continuously learning how attackers think.
 ```
-## 📡 Current Intelligence
+## Current Intelligence
 
 ```bash
 root@github:~$ cat intelligence.log
@@ -98,22 +107,28 @@ root@github:~$ cat intelligence.log
 
 Knowledge Status : Updating...
 ```
-## ⚙ System Scan
+## System Scan
 
 ```bash
 root@github:~$ neofetch
+```
 
-OS           :: Ubuntu • Kali Linux • Windows
-Languages    :: Python • C • SQL
+<p align="center">
+<img src="https://skillicons.dev/icons?i=python,c,sqlite,react,fastapi,git,github,linux,windows,vscode,bash" />
+</p>
+
+```text
 Focus        :: Cyber Security
 Speciality   :: SOC • Network Security • Incident Response
-Tools        :: Nmap • Wireshark • Burp Suite • Metasploit
-Editor       :: VS Code, Antigravity
-Shell        :: Bash
+Tools         :: Nmap • Wireshark • Burp Suite • Metasploit • Shodan
 ```
-## 📂 Operational Assets
+## Operational Assets
 
-### 🛡 GuardLink
+```bash
+root@github:~$ ls projects/
+```
+
+### GuardLink
 
 > AI-powered SIEM platform for real-time log analysis, anomaly detection, threat intelligence, and incident monitoring.
 
@@ -121,16 +136,59 @@ Shell        :: Bash
 
 ---
 
-#### 📜 SEPMS
+### SEPMS
 
-> Award-winning Secure Examination Paper Management System implementing Defense-in-Depth with multi-factor authentication, RBAC, cryptographic protection, AI-assisted paper generation, and secure dual-control paper release.
+> Award-winning secure examination paper management system implementing Defense-in-Depth using MFA, RBAC, AES-256 encryption, RSA-2048 digital signatures, AI-assisted paper generation and secure dual-control release.
 
-`Python` `SQLite` `AES-256` `RSA-2048` `SHA-256` `Defense-in-Depth` `RBAC` `MFA`
+`Python` `SQLite` `AES-256` `RSA-2048` `SHA-256` `Defense-in-Depth`
 
 ---
 
-### ⚡ Samarthya 2026
+### Samarthya 2026
 
-> Secure Norse mythology-themed event registration platform developed for IEEE Samarthya 2026, featuring a custom registration workflow, automated backend, and cloud deployment.
+> Secure Norse mythology-themed event registration platform developed for IEEE Samarthya 2026 with automated registration workflows and cloud deployment.
 
-`React` `TypeScript` `Vercel` `Google Apps Script` `Google Sheets`
+`React` `TypeScript` `Vercel` `Google Apps Script`
+## Security Philosophy
+
+```bash
+root@github:~$ cat philosophy.txt
+```
+
+```text
+Think like an attacker.
+
+Build like a defender.
+
+Automate where possible.
+
+Never stop learning.
+```
+## Connect
+
+```bash
+root@github:~$ ./connect
+```
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/ullasts">
+    <img src="https://skillicons.dev/icons?i=linkedin" height="42" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:ullasts.2312@gmail.com">
+    <img src="https://skillicons.dev/icons?i=gmail" height="42" />
+  </a>
+</p>
+## Session Summary
+
+```bash
+root@github:~$ logout
+
+Saving session...
+
+Workspace locked.
+
+Access Revoked.
+
+See you on the next engagement.
+```
