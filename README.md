@@ -5,7 +5,7 @@
 
 </div>
 
-```text
+```bash
 > ssh ullas@github
 
 Password: ********
@@ -33,7 +33,6 @@ Focus       : SOC • Network Security • Incident Response
 Interests   : AI × Cybersecurity | Cybersecurity × AI
 Platform    : Linux | Windows
 Lifestyle   : Basketball | CTFs
-Status      : Curious enough to break things.
-              Responsible enough to fix them.
+Status      : Learning...
 ```
 ````
