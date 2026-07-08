@@ -7,7 +7,7 @@
 
 <div align="center">
 
-<img src="./assets/banner.svg" alt="ullas@github — terminal banner" width="100%"/>
+<img src="./assets/banner.svg" alt="ullas23@github — terminal banner" width="100%"/>
 
 </div>
 
@@ -30,14 +30,14 @@
 ```text
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   Name        :  Ullas T S                                 │
-│   Alias       :  ullas23                                   │
-│   Role        :  Whitish-Grey Hat Hacker                   │
-│   Focus       :  SOC • Network Security • Incident Response│
-│   Interests   :  AI × Cybersecurity | Cybersecurity × AI  │
-│   Platform    :  Linux | Windows                           │
-│   Lifestyle   :  Basketball | CTFs                         │
-│   Status      :  Learning...                               │
+│   Name        :  Ullas T S                                  │
+│   Alias       :  ullas23                                    │
+│   Role        :  Grey Hat Hacker                            │
+│   Focus       :  SOC • Network Security • Incident Response │
+│   Interests   :  AI × Cybersecurity | Cybersecurity × AI    │
+│   Platform    :  Linux | Windows                            │
+│   Lifestyle   :  Basketball | CTFs                          │
+│   Status      :  Learning...                                │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -76,7 +76,7 @@ Experience Snapshot
   [ SYSTEM STATUS ]
 
   Operator      :  Ullas T S
-  Role          :  Whitish-Grey Hat Hacker
+  Role          :  Grey Hat Hacker
   Team          :  Purple Team
   Environment   :  Linux | Windows
   Status        :  ● Online
@@ -174,11 +174,11 @@ Experience Snapshot
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   Security Toolkit                                          │
-│   ──────────────────────────────────────────────────────   │
-│   Nmap · Wireshark · Burp Suite · Metasploit · Shodan      │
+│   ──────────────────────────────────────────────────────    │
+│   Nmap · Wireshark · Burp Suite · Metasploit · Shodan       │
 │                                                             │
 │   Speciality                                                │
-│   ──────────────────────────────────────────────────────   │
+│   ──────────────────────────────────────────────────────    │
 │   SOC · Network Security · Incident Response                │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
@@ -256,6 +256,7 @@ Experience Snapshot
 
 <br/>
 
+<!--
 ## `root@github:~$ cat achievements.log`
 
 ```text
@@ -263,20 +264,20 @@ Experience Snapshot
 
   [ ACHIEVEMENT LOG ]
 
-  [2024] ★  Mini Project Expo — First Prize
+  [2026] ★  Mini Project Expo — First Prize
             Secure Examination Paper Management System
 
-  [2024] ★  Technodea — Qualified
-            National-level technical competition
+  [2026] ★  Technodea — Qualified
+            National-level project exhibition and competition
 
-  [2024] ★  InnovateX — Best Idea Award
-            Recognized for AI-powered security solution (GuardLink)
+  [2025] ★  InnovateX — Best Idea Award
+            Recognized for Matrix - Modular, do it all cybersecurity solutions and community platform
 
-  [2024] ★  ROOTRON — Core Member
-            Cybersecurity technical club co-founder
+  [2025] ★  ROOTRON — Core Member
+            Cybersecurity Technical Club
 
-  [2024] ★  IEEE SSIT — Core Member
-            IEEE Society on Social Implications of Technology
+  [2023] ★  IEEE — Student Member
+            IEEE SSIT SB
 
 ═══════════════════════════════════════════════════════════════
 ```
@@ -293,15 +294,15 @@ Experience Snapshot
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   CERTIFICATION VAULT                                       │
-│   ──────────────────────────────────────────────────────   │
+│   ──────────────────────────────────────────────────────    │
 │                                                             │
-│   [ ] CompTIA Security+                  → In Pipeline     │
-│   [ ] Google Cybersecurity Certificate   → In Pipeline     │
-│   [ ] CEH — Certified Ethical Hacker     → In Pipeline     │
-│   [ ] CCNA — Cisco Networking            → In Pipeline     │
-│   [ ] AWS Cloud Practitioner             → In Pipeline     │
+│   [ ] CompTIA Security+                  → In Pipeline      │
+│   [ ] Google Cybersecurity Certificate   → In Pipeline      │
+│   [ ] CEH — Certified Ethical Hacker     → In Pipeline      │
+│   [ ] CCNA — Cisco Networking            → In Pipeline      │
+│   [ ] AWS Cloud Practitioner             → In Pipeline      │
 │                                                             │
-│   Status  :  Vault actively being filled.                  │
+│   Status  :  Vault actively being filled.                   │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -312,19 +313,19 @@ Experience Snapshot
 
 <br/>
 
+-->
+
 ## `root@github:~$ cat philosophy.txt`
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
+│   Think like an attacker.                                   │
 │                                                             │
-│   Think like an attacker.                                  │
+│   Build like a defender.                                    │
 │                                                             │
-│   Build like a defender.                                   │
+│   Automate where possible.                                  │
 │                                                             │
-│   Automate where possible.                                 │
-│                                                             │
-│   Never stop learning.                                     │
-│                                                             │
+│   Never stop learning.                                      │
 └─────────────────────────────────────────────────────────────┘
 ```
 
