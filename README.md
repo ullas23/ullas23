@@ -170,19 +170,21 @@ Experience Snapshot
 
 <br/>
 
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   Security Toolkit                                          │
-│   ──────────────────────────────────────────────────────    │
-│   Nmap · Wireshark · Burp Suite · Metasploit · Shodan       │
-│                                                             │
-│   Speciality                                                │
-│   ──────────────────────────────────────────────────────    │
-│   SOC · Network Security · Incident Response                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+**Security Toolkit**
+
+<div align="center">
+
+<!-- Single responsive SVG — icons + labels built in, wraps naturally at any viewport width -->
+<img
+  src="https://go-skill-icons.vercel.app/api/icons?i=wireshark,burpsuite,metasploit,kali&titles=true&perline=4"
+  alt="Wireshark · Burp Suite · Metasploit · Kali Linux"
+/>
+
+<br/>
+
+<sub>Also in the toolkit: <b>Nmap</b> · <b>Shodan</b></sub>
+
+</div>
 
 <br/>
 
