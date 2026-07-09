@@ -20,8 +20,6 @@
 -->
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 
-<br/>
-
 ## `ullas23@github:~$ whoami`
 
 ```bash
@@ -39,12 +37,8 @@
 └─────────────────────────────────────────────────────────────┘
 ```
 
-<br/>
-
 > *Curious enough to think like an attacker.*
 > *Responsible enough to build for defenders.*
-
-<br/>
 
 ## `ullas23@github:~$ cat experience.log`
 
@@ -59,11 +53,7 @@ Experience Snapshot
   ✓  National Hackathon Awardee
 ```
 
-<br/>
-
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-
-<br/>
 
 ## `ullas23@github:~$ ./mission-control`
 
@@ -97,13 +87,9 @@ Experience Snapshot
 ═══════════════════════════════════════════════════════════════
 ```
 
-<br/>
-
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 
 ## `ullas23@github:~$ neofetch`
-
-<br/>
 
 <div align="center">
 
@@ -125,8 +111,6 @@ Experience Snapshot
 
 </div>
 
-<br/>
-
 ```bash
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
@@ -141,15 +125,9 @@ Experience Snapshot
 └─────────────────────────────────────────────────────────────┘
 ```
 
-<br/>
-
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 
-<br/>
-
 ## `ullas23@github:~$ ls projects/`
-
-<br/>
 
 <div align="center">
 
@@ -211,8 +189,6 @@ Experience Snapshot
 
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 
-<br/>
-
 <!--
 ## `ullas23@github:~$ cat achievements.log`
 
@@ -268,10 +244,6 @@ Experience Snapshot
 
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 
-<br/>
-
--->
-
 ## `ullas23@github:~$ cat philosophy.txt`
 
 ```bash
@@ -286,15 +258,9 @@ Experience Snapshot
 └─────────────────────────────────────────────────────────────┘
 ```
 
-<br/>
-
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 
-<br/>
-
 ## `ullas23@github:~$ ./connect`
-
-<br/>
 
 <div align="center">
 
@@ -312,19 +278,13 @@ Experience Snapshot
 
 </div>
 
-<br/>
-
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-
-<br/>
 
 <div align="center">
 
 <img src="./assets/footer.svg" alt="logout — session closed" width="100%"/>
 
 </div>
-
-<br/>
 
 <!--
   Profile views counter (optional — enable after publishing)
