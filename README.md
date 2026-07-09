@@ -48,8 +48,8 @@ Experience Snapshot
   ✓  National Hackathon Awardee
 ```
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-## `ullas23@github:~$ ./mission-control`
 
+## `ullas23@github:~$ ./mission-control`
 ```bash
 ═══════════════════════════════════════════════════════════════
 
@@ -81,8 +81,8 @@ Experience Snapshot
 ═══════════════════════════════════════════════════════════════
 ```
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-## `ullas23@github:~$ neofetch`
 
+## `ullas23@github:~$ neofetch`
 <div align="center">
 **Languages**
 <img src="https://skillicons.dev/icons?i=python,c,sqlite&theme=dark" alt="Languages: Python, C, SQLite"/>
@@ -107,8 +107,8 @@ Experience Snapshot
 └─────────────────────────────────────────────────────────────┘
 ```
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-## `ullas23@github:~$ ls projects/`
 
+## `ullas23@github:~$ ls projects/`
 <div align="center">
 <!--  GuardLink  -->
 <table>
