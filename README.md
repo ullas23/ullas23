@@ -25,7 +25,7 @@
 
 <br/>
 
-## `root@github:~$ whoami`
+## `ullas23@github:~$ whoami`
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
@@ -49,7 +49,7 @@
 
 <br/>
 
-## `root@github:~$ cat experience.log`
+## `ullas23@github:~$ cat experience.log`
 
 ```text
 Experience Snapshot
@@ -68,7 +68,7 @@ Experience Snapshot
 
 <br/>
 
-## `root@github:~$ ./mission-control`
+## `ullas23@github:~$ ./mission-control`
 
 ```text
 ═══════════════════════════════════════════════════════════════
@@ -111,7 +111,7 @@ Experience Snapshot
 
 <br/>
 
-## `root@github:~$ cat intelligence.log`
+## `ullas23@github:~$ cat intelligence.log`
 
 ```text
 ═══════════════════════════════════════════════════════════════
@@ -144,7 +144,7 @@ Experience Snapshot
 
 <br/>
 
-## `root@github:~$ neofetch`
+## `ullas23@github:~$ neofetch`
 
 <br/>
 
@@ -190,7 +190,7 @@ Experience Snapshot
 
 <br/>
 
-## `root@github:~$ ls projects/`
+## `ullas23@github:~$ ls projects/`
 
 <br/>
 
@@ -257,7 +257,7 @@ Experience Snapshot
 <br/>
 
 <!--
-## `root@github:~$ cat achievements.log`
+## `ullas23@github:~$ cat achievements.log`
 
 ```text
 ═══════════════════════════════════════════════════════════════
@@ -288,7 +288,7 @@ Experience Snapshot
 
 <br/>
 
-## `root@github:~$ ls certificates/`
+## `ullas23@github:~$ ls certificates/`
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
@@ -315,7 +315,7 @@ Experience Snapshot
 
 -->
 
-## `root@github:~$ cat philosophy.txt`
+## `ullas23@github:~$ cat philosophy.txt`
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
@@ -335,7 +335,7 @@ Experience Snapshot
 
 <br/>
 
-## `root@github:~$ ./connect`
+## `ullas23@github:~$ ./connect`
 
 <br/>
 

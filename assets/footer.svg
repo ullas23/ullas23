@@ -1,66 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 162" width="860" height="162">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&amp;display=swap');
 
-      .f-bg { fill: #0d0d0d; }
-      .f-bar { fill: #1a1a1a; }
-      .f-prompt { fill: #00FF41; font-family: 'Fira Code', monospace; font-size: 13px; }
-      .f-dim { fill: #4a8f5a; font-family: 'Fira Code', monospace; font-size: 13px; }
-      .f-white { fill: #cccccc; font-family: 'Fira Code', monospace; font-size: 13px; }
-      .f-cursor {
-        fill: #00FF41;
-        animation: fblink 1s step-end infinite;
-      }
-      @keyframes fblink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-      }
-      .f-l1 { opacity: 0; animation: fIn 0.4s ease forwards; animation-delay: 0.3s; }
-      .f-l2 { opacity: 0; animation: fIn 0.4s ease forwards; animation-delay: 1.0s; }
-      .f-l3 { opacity: 0; animation: fIn 0.4s ease forwards; animation-delay: 1.7s; }
-      .f-l4 { opacity: 0; animation: fIn 0.4s ease forwards; animation-delay: 2.3s; }
-      .f-l5 { opacity: 0; animation: fIn 0.4s ease forwards; animation-delay: 2.8s; }
-      @keyframes fIn {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+      .terminal-bg { fill: #0d0d0d; }
+      .window-bar  { fill: #1a1a1a; }
+      .title-text  { fill: #555; font-family: 'Fira Code', monospace; font-size: 12px; }
+      .prompt      { fill: #00FF41; font-family: 'Fira Code', monospace; font-size: 13.5px; }
+      .white       { fill: #cccccc; font-family: 'Fira Code', monospace; font-size: 13.5px; }
+
+      .l1 { opacity:0; animation: fi .35s ease forwards  .20s; }
+      .l2 { opacity:0; animation: fi .35s ease forwards  .85s; }
+      .l3 { opacity:0; animation: fi .40s ease forwards 1.55s; }
+
+      @keyframes fi {
+        from { opacity:0; transform: translateY(2px); }
+        to   { opacity:1; transform: translateY(0);   }
       }
     </style>
-    <filter id="fglow">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <filter id="borderGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 0.5 0" result="g"/>
+      <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <!-- Window -->
-  <rect x="10" y="10" width="840" height="180" rx="10" ry="10" class="f-bg"/>
-  <rect x="10" y="10" width="840" height="180" rx="10" ry="10" fill="none" stroke="#00FF41" stroke-width="0.6" stroke-opacity="0.3"/>
+  <!-- ── Window shell ───────────────────────────────────────────── -->
+  <rect x="10" y="10" width="840" height="142" rx="12" ry="12"
+        class="terminal-bg" filter="url(#borderGlow)"/>
+  <rect x="10" y="10" width="840" height="142" rx="12" ry="12"
+        fill="none" stroke="#00FF41" stroke-width="0.8" stroke-opacity="0.35"/>
 
   <!-- Title bar -->
-  <rect x="10" y="10" width="840" height="32" rx="10" ry="10" class="f-bar"/>
-  <rect x="10" y="26" width="840" height="16" class="f-bar"/>
-  <circle cx="32" cy="26" r="6" fill="#ff5f57"/>
-  <circle cx="52" cy="26" r="6" fill="#ffbd2e"/>
-  <circle cx="72" cy="26" r="6" fill="#28c840"/>
-  <text x="430" y="31" text-anchor="middle" fill="#555" font-family="'Fira Code', monospace" font-size="11px">session-logout — bash</text>
-  <line x1="10" y1="42" x2="850" y2="42" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="10" y="10" width="840" height="36" rx="12" ry="12" class="window-bar"/>
+  <rect x="10" y="28"  width="840" height="18" class="window-bar"/>
+  <circle cx="36" cy="28" r="7" fill="#ff5f57"/>
+  <circle cx="58" cy="28" r="7" fill="#ffbd2e"/>
+  <circle cx="80" cy="28" r="7" fill="#28c840"/>
+  <text x="430" y="33" text-anchor="middle" class="title-text">
+    ullas23@github — bash — 80×24
+  </text>
+  <line x1="10" y1="46" x2="850" y2="46" stroke="#2a2a2a" stroke-width="1"/>
 
-  <!-- Content -->
-  <g class="f-l1">
-    <text x="28" y="72" class="f-prompt">❯ </text>
-    <text x="46" y="72" class="f-white">logout</text>
+  <!-- ── Line 1: logout command ─────────────────────────────────── -->
+  <g class="l1">
+    <text x="32" y="80" class="prompt">ullas23@github:~$</text>
+    <text x="212" y="80" class="white"> logout</text>
   </g>
-  <g class="f-l2">
-    <text x="28" y="96" class="f-dim">Saving workspace...</text>
+
+  <!-- ── Line 2: Workspace locked. Connection Closed. ──────────── -->
+  <g class="l2">
+    <text x="32" y="108" class="prompt" font-weight="600">Workspace locked. Connection Closed.</text>
   </g>
-  <g class="f-l3">
-    <text x="28" y="116" class="f-dim">Encrypting session...</text>
-  </g>
-  <g class="f-l4">
-    <text x="28" y="136" class="f-prompt">Workspace locked. Connection closed.</text>
-  </g>
-  <g class="f-l5">
-    <text x="28" y="160" class="f-white">See you on the next engagement.</text>
-    <rect x="28" y="167" width="8" height="14" rx="1" class="f-cursor"/>
+
+  <!-- ── Line 3: See you on the next engagement. ───────────────── -->
+  <g class="l3">
+    <text x="32" y="136" class="white">See you on the next engagement.</text>
   </g>
 </svg>

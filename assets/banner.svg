@@ -1,124 +1,205 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" width="860" height="380">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 352" width="860" height="352">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&amp;display=swap');
 
-      .terminal-bg { fill: #0d0d0d; }
-      .window-bar { fill: #1a1a1a; }
-      .btn-red { fill: #ff5f57; }
-      .btn-yellow { fill: #ffbd2e; }
-      .btn-green { fill: #28c840; }
-      .title-text { fill: #666; font-family: 'Fira Code', monospace; font-size: 12px; }
-      .prompt { fill: #00FF41; font-family: 'Fira Code', monospace; font-size: 13.5px; }
-      .dim { fill: #4a8f5a; font-family: 'Fira Code', monospace; font-size: 13.5px; }
-      .white { fill: #cccccc; font-family: 'Fira Code', monospace; font-size: 13.5px; }
+      .terminal-bg  { fill: #0d0d0d; }
+      .window-bar   { fill: #1a1a1a; }
+      .btn-red      { fill: #ff5f57; }
+      .btn-yellow   { fill: #ffbd2e; }
+      .btn-green    { fill: #28c840; }
+      .title-text   { fill: #555; font-family: 'Fira Code', monospace; font-size: 12px; }
+      .prompt       { fill: #00FF41; font-family: 'Fira Code', monospace; font-size: 13.5px; }
+      .dim          { fill: #4a8f5a; font-family: 'Fira Code', monospace; font-size: 13.5px; }
+      .white        { fill: #cccccc; font-family: 'Fira Code', monospace; font-size: 13.5px; }
+
+      /* ── Staggered line fade-ins ──────────────────────────────── */
+      .l1  { opacity:0; animation: fi .3s ease forwards  .20s; }
+      .l2  { opacity:0; animation: fi .3s ease forwards  .75s; }
+      .l3  { opacity:0; animation: fi .3s ease forwards 1.30s; }
+      .l4  { opacity:0; animation: fi .3s ease forwards 1.80s; }
+      .l5  { opacity:0; animation: fi .3s ease forwards 2.20s; }
+      .l6  { opacity:0; animation: fi .3s ease forwards 2.60s; }
+      .l7  { opacity:0; animation: fi .3s ease forwards 3.00s; }
+      /* loading bar label row */
+      .l8  { opacity:0; animation: fi .2s ease forwards 3.40s; }
+      /* "Successful." */
+      .l9  { opacity:0; animation: fi .3s ease forwards 7.00s; }
+      /* prompt + cursor */
+      .l10 { opacity:0; animation: fi .2s ease forwards 7.40s; }
+
+      /* ── Progress bar ────────────────────────────────────────────
+         Bar rect: x=32  y=249  width=762  height=16
+         Left-center: (32, 257)
+         delay: 3.60s   duration: 3.20s   finishes: 6.80s        */
+      .bar-fill {
+        transform-origin: 32px 257px;
+        transform: scaleX(0);
+        animation: fillBar 3.20s ease-out forwards 3.60s;
+      }
+      .bar-glow {
+        transform-origin: 32px 257px;
+        transform: scaleX(0);
+        animation: fillBar 3.20s ease-out forwards 3.60s;
+      }
+
+      /* ── Percentage counter ──────────────────────────────────────
+         Interval = 3.20s / 4 = 0.80s
+         0%   → 3.60s
+         25%  → 4.40s
+         50%  → 5.20s
+         75%  → 6.00s
+         100% → 6.80s  (bar done)                                  */
+      .pct  { opacity:0; }
+      .p0   { animation: cntFlash .80s linear 3.60s both; }
+      .p25  { animation: cntFlash .80s linear 4.40s both; }
+      .p50  { animation: cntFlash .80s linear 5.20s both; }
+      .p75  { animation: cntFlash .80s linear 6.00s both; }
+      .p100 { animation: cntFinal .10s linear 6.80s forwards; }
+
+      /* ── Blinking cursor ─────────────────────────────────────── */
       .cursor-blink {
         fill: #00FF41;
-        animation: blink 1s step-end infinite;
+        animation: blink 1s step-end infinite 7.40s;
+        opacity: 0;
+      }
+
+      /* ── Keyframes ───────────────────────────────────────────── */
+      @keyframes fi {
+        from { opacity:0; transform: translateY(2px); }
+        to   { opacity:1; transform: translateY(0);   }
+      }
+      @keyframes fillBar {
+        from { transform: scaleX(0); }
+        to   { transform: scaleX(1); }
+      }
+      @keyframes cntFlash {
+        0%   { opacity:0; }
+        8%   { opacity:1; }
+        88%  { opacity:1; }
+        100% { opacity:0; }
+      }
+      @keyframes cntFinal {
+        from { opacity:0; }
+        to   { opacity:1; }
       }
       @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-      }
-
-      /* Typing animation lines */
-      .line1 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 0.2s; }
-      .line2 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 0.8s; }
-      .line3 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 1.4s; }
-      .line4 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 2.0s; }
-      .line5 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 2.5s; }
-      .line6 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 3.0s; }
-      .line7 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 3.4s; }
-      .line8 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 3.8s; }
-      .line9 { opacity: 0; animation: fadeIn 0.3s ease forwards; animation-delay: 4.2s; }
-      .cursor-line { opacity: 0; animation: fadeIn 0.1s ease forwards; animation-delay: 4.5s; }
-
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(2px); }
-        to   { opacity: 1; transform: translateY(0); }
-      }
-
-      .glow {
-        filter: drop-shadow(0 0 6px rgba(0, 255, 65, 0.5));
+        0%,100% { opacity:1; }
+        50%      { opacity:0; }
       }
     </style>
 
-    <!-- Border glow filter -->
+    <!-- Border glow -->
     <filter id="borderGlow">
       <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
       <feColorMatrix in="blur" type="matrix"
-        values="0 0 0 0 0   0 1 0 0 0   0 0 0 0 0   0 0 0 0.5 0" result="greenGlow"/>
-      <feMerge>
-        <feMergeNode in="greenGlow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+        values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 0.5 0" result="g"/>
+      <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Bar glow -->
+    <filter id="barGlow" x="-2%" y="-80%" width="104%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 0.5 0" result="g"/>
+      <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <!-- Terminal window -->
-  <rect x="10" y="10" width="840" height="360" rx="12" ry="12" class="terminal-bg" filter="url(#borderGlow)"/>
-  <rect x="10" y="10" width="840" height="360" rx="12" ry="12" fill="none" stroke="#00FF41" stroke-width="0.8" stroke-opacity="0.4"/>
+  <!-- ── Window shell ─────────────────────────────────────────── -->
+  <rect x="10" y="10" width="840" height="332" rx="12" ry="12"
+        class="terminal-bg" filter="url(#borderGlow)"/>
+  <rect x="10" y="10" width="840" height="332" rx="12" ry="12"
+        fill="none" stroke="#00FF41" stroke-width="0.8" stroke-opacity="0.35"/>
 
   <!-- Title bar -->
   <rect x="10" y="10" width="840" height="36" rx="12" ry="12" class="window-bar"/>
-  <rect x="10" y="28" width="840" height="18" class="window-bar"/>
+  <rect x="10" y="28"  width="840" height="18" class="window-bar"/>
 
-  <!-- Window buttons -->
+  <!-- Traffic lights -->
   <circle cx="36" cy="28" r="7" class="btn-red"/>
   <circle cx="58" cy="28" r="7" class="btn-yellow"/>
   <circle cx="80" cy="28" r="7" class="btn-green"/>
 
-  <!-- Title -->
-  <text x="430" y="33" text-anchor="middle" class="title-text">ullas@github — bash — 80×24</text>
+  <!-- Title bar text -->
+  <text x="430" y="33" text-anchor="middle" class="title-text">
+    ullas23@github — bash — 80×24
+  </text>
 
-  <!-- Separator line -->
+  <!-- Separator under title bar -->
   <line x1="10" y1="46" x2="850" y2="46" stroke="#2a2a2a" stroke-width="1"/>
 
-  <!-- Terminal content -->
-  <g class="line1">
-    <text x="32" y="80" class="prompt">❯ </text>
-    <text x="52" y="80" class="white">ssh ullas@github</text>
+  <!-- ── Line 1: ssh command ──────────────────────────────────── -->
+  <g class="l1">
+    <text x="32" y="82" class="prompt">❯ </text>
+    <text x="52" y="82" class="white">ssh ullas23@github</text>
   </g>
 
-  <g class="line2">
-    <text x="32" y="104" class="dim">Password:</text>
-    <text x="118" y="104" class="white">••••••••</text>
+  <!-- ── Line 2: Password ─────────────────────────────────────── -->
+  <g class="l2">
+    <text x="32" y="106" class="dim">Password:</text>
+    <text x="118" y="106" class="white">************</text>
   </g>
 
-  <g class="line3">
-    <text x="32" y="128" class="prompt" font-weight="500">Access Granted.</text>
+  <!-- ── Line 3: Access Granted ───────────────────────────────── -->
+  <g class="l3">
+    <text x="32" y="130" class="prompt" font-weight="600">Access Granted.</text>
   </g>
 
-  <g class="line4">
-    <text x="32" y="152" class="dim">Initializing Security Workspace...</text>
+  <!-- ── Line 4: Initializing Security Workspace ──────────────── -->
+  <g class="l4">
+    <text x="32" y="155" class="dim">Initializing Security Workspace...</text>
   </g>
 
-  <g class="line5">
-    <text x="32" y="172" class="dim">Loading Threat Intelligence...</text>
+  <!-- ── Line 5: Loading Intelligence ────────────────────────── -->
+  <g class="l5">
+    <text x="32" y="176" class="dim">Loading Intelligence...</text>
   </g>
 
-  <g class="line6">
-    <text x="32" y="192" class="dim">Loading Active Projects...</text>
+  <!-- ── Line 6: Loading Operational Assets ──────────────────── -->
+  <g class="l6">
+    <text x="32" y="197" class="dim">Loading Operational Assets...</text>
   </g>
 
-  <g class="line7">
-    <text x="32" y="212" class="dim">Loading Incident Response Playbooks...</text>
+  <!-- ── Line 7: Initializing Boot Sequence ──────────────────── -->
+  <g class="l7">
+    <text x="32" y="218" class="dim">Initializing Boot Sequence...</text>
   </g>
 
-  <g class="line8">
-    <text x="32" y="236" class="prompt" font-weight="500">Done.</text>
+  <!-- ── Line 8: Loading bar ──────────────────────────────────── -->
+  <g class="l8">
+    <!-- Row label -->
+    <text x="32" y="242" class="dim" font-size="12">Loading</text>
+
+    <!-- Track -->
+    <rect x="32" y="249" width="762" height="16" rx="3"
+          fill="#0b1e0d" stroke="#193818" stroke-width=".7"/>
+
+    <!-- Glow fill -->
+    <rect x="32" y="249" width="762" height="16" rx="3"
+          fill="#00FF41" fill-opacity=".14" class="bar-glow"
+          filter="url(#barGlow)"/>
+
+    <!-- Solid fill -->
+    <rect x="32" y="249" width="762" height="16" rx="3"
+          fill="#00FF41" fill-opacity=".88" class="bar-fill"/>
+
+    <!-- Percentage labels — stacked, only one visible at a time -->
+    <text x="806" y="261" class="prompt pct p0"   font-size="13" font-weight="700">  0%</text>
+    <text x="806" y="261" class="prompt pct p25"  font-size="13" font-weight="700"> 25%</text>
+    <text x="806" y="261" class="prompt pct p50"  font-size="13" font-weight="700"> 50%</text>
+    <text x="806" y="261" class="prompt pct p75"  font-size="13" font-weight="700"> 75%</text>
+    <text x="806" y="261" class="prompt pct p100" font-size="13" font-weight="700">100%</text>
   </g>
 
-  <g class="line9">
-    <text x="32" y="266" class="dim">─────────────────────────────────────────────────</text>
+  <!-- ── Line 9: Successful. ──────────────────────────────────── -->
+  <g class="l9">
+    <text x="32" y="298" class="prompt" font-weight="600">Successful.</text>
   </g>
 
-  <!-- Blinking cursor at bottom -->
-  <g class="cursor-line">
-    <text x="32" y="298" class="prompt">❯ </text>
-    <rect x="52" y="284" width="9" height="16" rx="1" class="cursor-blink"/>
+  <!-- ── Line 10: Prompt + blinking cursor ────────────────────── -->
+  <g class="l10">
+    <text x="32" y="328" class="prompt">ullas23@github:~$ </text>
   </g>
-
-  <!-- Bottom padding line -->
-  <text x="32" y="340" class="dim" opacity="0.3">ullas@github:~$</text>
+  <rect x="208" y="314" width="9" height="16" rx="1" class="cursor-blink"/>
 </svg>
