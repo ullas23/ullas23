@@ -239,9 +239,9 @@ Active work in progress. Building security tooling and research projects continu
 │                                                                        │
 │   Never stop learning.                                                 │
 └─────────────────────────────────────────────────────────────┘
-
-<img src="./assets/divider.svg" alt="divider" width="100%"/>
 ```
+<img src="./assets/divider.svg" alt="divider" width="100%"/>
+
 ## `ullas23@github:~$ ./connect`
 
 <div align="center">
