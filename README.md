@@ -49,6 +49,7 @@ Experience Snapshot
 ```
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 ## `ullas23@github:~$ ./mission-control`
+
 ```bash
 ═══════════════════════════════════════════════════════════════
 
@@ -64,6 +65,7 @@ Experience Snapshot
   ✔  Cloud Systems
 
   [ NEXT TARGETS ]
+
   ├── Cloud Security
   ├── Reverse Engineering
   ├── Risk Assessment
