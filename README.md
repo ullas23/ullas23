@@ -12,22 +12,19 @@
 </div>
 
 <br/>
-
+<!--
 <div align="center">
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=800&color=00FF41&center=true&vCenter=true&multiline=false&width=680&lines=Building+Secure+Systems...;Learning+Offensive+Techniques...;Thinking+Like+an+Attacker...;Defending+Like+a+Defender...;Purple+Team+Enthusiast.)](https://git.io/typing-svg)
-
 </div>
-
 <br/>
-
+-->
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 
 <br/>
 
 ## `ullas23@github:~$ whoami`
 
-```text
+```bash
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   Name        :  Ullas T S                                  │
@@ -51,7 +48,7 @@
 
 ## `ullas23@github:~$ cat experience.log`
 
-```text
+```bash
 Experience Snapshot
 ───────────────────────────────────────────────────────────────
 
@@ -70,17 +67,7 @@ Experience Snapshot
 
 ## `ullas23@github:~$ ./mission-control`
 
-```text
-═══════════════════════════════════════════════════════════════
-
-  [ SYSTEM STATUS ]
-
-  Operator      :  Ullas T S
-  Role          :  Grey Hat Hacker
-  Team          :  Purple Team
-  Environment   :  Linux | Windows
-  Status        :  ● Online
-
+```bash
 ═══════════════════════════════════════════════════════════════
 
   [ ACTIVE OBJECTIVES ]
@@ -91,14 +78,19 @@ Experience Snapshot
   ✔  Threat Detection & Threat Hunting
   ✔  Incident Response
   ✔  Malware Analysis
-  ✔  Reverse Engineering
-  ✔  Cloud Security
+  ✔  Identity & Access Management
+  ✔  Cloud Systems
 
-═══════════════════════════════════════════════════════════════
+  [ NEXT TARGETS ]
+  ├── Cloud Security
+  ├── Reverse Engineering
+  ├── Risk Assessment
+  ├── Security Compliance
+  └── Advanced OWASP Top 10
 
   [ CURRENT MISSION ]
 
-  Designing security solutions that detect, analyze and respond
+  Designing security solutions that DETECT, ANALYZE and RESPOND
   to modern cyber threats while continuously learning how
   attackers think.
 
@@ -108,41 +100,6 @@ Experience Snapshot
 <br/>
 
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-
-<br/>
-
-## `ullas23@github:~$ cat intelligence.log`
-
-```text
-═══════════════════════════════════════════════════════════════
-
-  [ TRAINING PIPELINE ]
-
-  [ IN PROGRESS ]
-  ├── Enterprise Networking
-  ├── Security Operations (SOC)
-  ├── Incident Response
-  ├── Threat Detection & Analysis
-  └── Identity & Access Management
-
-  [ NEXT TARGETS ]
-  ├── Cloud Security
-  ├── Risk Assessment
-  ├── Security Compliance
-  └── Advanced OWASP Top 10
-
-═══════════════════════════════════════════════════════════════
-
-  Knowledge Status  :  Updating...
-
-═══════════════════════════════════════════════════════════════
-```
-
-<br/>
-
-<img src="./assets/divider.svg" alt="divider" width="100%"/>
-
-<br/>
 
 ## `ullas23@github:~$ neofetch`
 
@@ -170,7 +127,7 @@ Experience Snapshot
 
 <br/>
 
-```text
+```bash
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   Security Toolkit                                          │
@@ -317,7 +274,7 @@ Experience Snapshot
 
 ## `ullas23@github:~$ cat philosophy.txt`
 
-```text
+```bash
 ┌─────────────────────────────────────────────────────────────┐
 │   Think like an attacker.                                   │
 │                                                             │

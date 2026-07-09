@@ -21,35 +21,31 @@
       .l5  { opacity:0; animation: fi .3s ease forwards 2.20s; }
       .l6  { opacity:0; animation: fi .3s ease forwards 2.60s; }
       .l7  { opacity:0; animation: fi .3s ease forwards 3.00s; }
-      /* loading bar label row */
       .l8  { opacity:0; animation: fi .2s ease forwards 3.40s; }
-      /* "Successful." */
       .l9  { opacity:0; animation: fi .3s ease forwards 7.00s; }
-      /* prompt + cursor */
       .l10 { opacity:0; animation: fi .2s ease forwards 7.40s; }
 
-      /* ── Progress bar ────────────────────────────────────────────
-         Bar rect: x=32  y=249  width=762  height=16
-         Left-center: (32, 257)
-         delay: 3.60s   duration: 3.20s   finishes: 6.80s        */
-      .bar-fill {
-        transform-origin: 32px 257px;
-        transform: scaleX(0);
-        animation: fillBar 3.20s ease-out forwards 3.60s;
+      /*
+       * ── Block reveal via clipPath width animation ───────────────
+       *    39 portrait blocks: 14w × 28h, gap=5px, pitch=19px
+       *    Block area: x=44 → x=780  (736px total)
+       *    delay: 3.60s   duration: 3.20s   finishes: t=6.80s
+       */
+      .block-mask {
+        animation: revealBlocks 3.20s ease-out forwards 3.60s;
       }
-      .bar-glow {
-        transform-origin: 32px 257px;
-        transform: scaleX(0);
-        animation: fillBar 3.20s ease-out forwards 3.60s;
+      @keyframes revealBlocks {
+        from { width: 0px;   }
+        to   { width: 736px; }
       }
 
-      /* ── Percentage counter ──────────────────────────────────────
-         Interval = 3.20s / 4 = 0.80s
-         0%   → 3.60s
-         25%  → 4.40s
-         50%  → 5.20s
-         75%  → 6.00s
-         100% → 6.80s  (bar done)                                  */
+      /*
+       * ── Percentage counter ────────────────────────────────────
+       *    Interval = 3.20s / 4 = 0.80s per step
+       *    0%   → 3.60s  |  25% → 4.40s
+       *    50%  → 5.20s  |  75% → 6.00s
+       *    100% → 6.80s  (same frame blocks complete)
+       */
       .pct  { opacity:0; }
       .p0   { animation: cntFlash .80s linear 3.60s both; }
       .p25  { animation: cntFlash .80s linear 4.40s both; }
@@ -68,10 +64,6 @@
       @keyframes fi {
         from { opacity:0; transform: translateY(2px); }
         to   { opacity:1; transform: translateY(0);   }
-      }
-      @keyframes fillBar {
-        from { transform: scaleX(0); }
-        to   { transform: scaleX(1); }
       }
       @keyframes cntFlash {
         0%   { opacity:0; }
@@ -97,13 +89,15 @@
       <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <!-- Bar glow -->
-    <filter id="barGlow" x="-2%" y="-80%" width="104%" height="260%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
-      <feColorMatrix in="blur" type="matrix"
-        values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 0.5 0" result="g"/>
-      <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <!--
+      Block reveal clip path.
+      x=44 y=241 — aligns exactly with block top-left corner.
+      height=28   — exact block height.
+      width: 0 → 736px via .block-mask animation.
+    -->
+    <clipPath id="blockClip">
+      <rect x="44" y="239" width="0" height="20" class="block-mask"/>
+    </clipPath>
   </defs>
 
   <!-- ── Window shell ─────────────────────────────────────────── -->
@@ -115,18 +109,12 @@
   <!-- Title bar -->
   <rect x="10" y="10" width="840" height="36" rx="12" ry="12" class="window-bar"/>
   <rect x="10" y="28"  width="840" height="18" class="window-bar"/>
-
-  <!-- Traffic lights -->
   <circle cx="36" cy="28" r="7" class="btn-red"/>
   <circle cx="58" cy="28" r="7" class="btn-yellow"/>
   <circle cx="80" cy="28" r="7" class="btn-green"/>
-
-  <!-- Title bar text -->
   <text x="430" y="33" text-anchor="middle" class="title-text">
     ullas23@github — bash — 80×24
   </text>
-
-  <!-- Separator under title bar -->
   <line x1="10" y1="46" x2="850" y2="46" stroke="#2a2a2a" stroke-width="1"/>
 
   <!-- ── Line 1: ssh command ──────────────────────────────────── -->
@@ -166,40 +154,92 @@
     <text x="32" y="218" class="dim">Initializing Boot Sequence...</text>
   </g>
 
-  <!-- ── Line 8: Loading bar ──────────────────────────────────── -->
+  <!--
+    ── Line 8: Terminal block progress bar ──────────────────────
+
+    Blocks : 39 portrait blocks  (14w × 28h)
+             gap = 5px,  pitch = 19px
+             Block i: x = 44 + i×19,  y = 241
+             Last block ends: x = 766 + 14 = 780
+
+    Brackets: SVG path strokes — exact same height as blocks (28px)
+              [ left path:  M42,241 → 34,241 → 34,269 → 42,269
+              ] right path: M783,241 → 791,241 → 791,269 → 783,269
+
+    Empty state: no background slots — space is invisible before fill.
+
+    Filled blocks: clipped by #blockClip (width 0→736px over 3.20s)
+  -->
   <g class="l8">
-    <!-- Row label -->
-    <text x="32" y="242" class="dim" font-size="12">Loading</text>
 
-    <!-- Track -->
-    <rect x="32" y="249" width="762" height="16" rx="3"
-          fill="#0b1e0d" stroke="#193818" stroke-width=".7"/>
+    <!-- Left bracket [ — exact block height, SVG path stroke -->
+    <path d="M42,239 L34,239 L34,259 L42,259"
+          fill="none" stroke="#00FF41" stroke-width="2" stroke-linecap="square"/>
 
-    <!-- Glow fill -->
-    <rect x="32" y="249" width="762" height="16" rx="3"
-          fill="#00FF41" fill-opacity=".14" class="bar-glow"
-          filter="url(#barGlow)"/>
+    <!-- Right bracket ] — mirrors left bracket -->
+    <path d="M783,239 L791,239 L791,259 L783,259"
+          fill="none" stroke="#00FF41" stroke-width="2" stroke-linecap="square"/>
 
-    <!-- Solid fill -->
-    <rect x="32" y="249" width="762" height="16" rx="3"
-          fill="#00FF41" fill-opacity=".88" class="bar-fill"/>
+    <!-- Portrait blocks revealed left-to-right by clipPath animation -->
+    <g clip-path="url(#blockClip)">
+      <!-- pitch=19: x = 44 + i*19  for i = 0..38 -->
+      <rect x="44"  y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="63"  y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="82"  y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="101" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="120" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="139" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="158" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="177" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="196" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="215" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="234" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="253" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="272" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="291" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="310" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="329" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="348" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="367" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="386" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="405" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="424" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="443" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="462" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="481" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="500" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="519" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="538" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="557" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="576" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="595" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="614" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="633" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="652" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="671" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="690" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="709" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="728" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="747" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+      <rect x="766" y="239" width="14" height="20" rx="1" fill="#d4d4d4"/>
+    </g>
 
-    <!-- Percentage labels — stacked, only one visible at a time -->
-    <text x="806" y="261" class="prompt pct p0"   font-size="13" font-weight="700">  0%</text>
-    <text x="806" y="261" class="prompt pct p25"  font-size="13" font-weight="700"> 25%</text>
-    <text x="806" y="261" class="prompt pct p50"  font-size="13" font-weight="700"> 50%</text>
-    <text x="806" y="261" class="prompt pct p75"  font-size="13" font-weight="700"> 75%</text>
-    <text x="806" y="261" class="prompt pct p100" font-size="13" font-weight="700">100%</text>
+    <!-- Percentage counter — stacked, only one visible at a time -->
+    <text x="806" y="254" class="prompt pct p0"   font-size="13" font-weight="700">  0%</text>
+    <text x="806" y="254" class="prompt pct p25"  font-size="13" font-weight="700"> 25%</text>
+    <text x="806" y="254" class="prompt pct p50"  font-size="13" font-weight="700"> 50%</text>
+    <text x="806" y="254" class="prompt pct p75"  font-size="13" font-weight="700"> 75%</text>
+    <text x="806" y="254" class="prompt pct p100" font-size="13" font-weight="700">100%</text>
   </g>
 
   <!-- ── Line 9: Successful. ──────────────────────────────────── -->
   <g class="l9">
-    <text x="32" y="298" class="prompt" font-weight="600">Successful.</text>
+    <text x="32" y="283" class="prompt" font-weight="600">Successful.</text>
   </g>
 
   <!-- ── Line 10: Prompt + blinking cursor ────────────────────── -->
   <g class="l10">
-    <text x="32" y="328" class="prompt">ullas23@github:~$ </text>
+    <text x="32" y="313" class="prompt">ullas23@github:~$ </text>
   </g>
-  <rect x="208" y="314" width="9" height="16" rx="1" class="cursor-blink"/>
+  <rect x="208" y="299" width="9" height="16" rx="1" class="cursor-blink"/>
 </svg>
