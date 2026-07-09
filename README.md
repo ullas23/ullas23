@@ -236,7 +236,7 @@ Experience Snapshot
 <br/>
 
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-
+-->
 ## `ullas23@github:~$ cat philosophy.txt`
 
 ```bash
@@ -249,14 +249,12 @@ Experience Snapshot
 │                                                             │
 │   Never stop learning.                                      │
 └─────────────────────────────────────────────────────────────┘
-```
 
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-
+```
 ## `ullas23@github:~$ ./connect`
 
 <div align="center">
-
 <a href="https://www.linkedin.com/in/ullasts">
   <img src="https://skillicons.dev/icons?i=linkedin&theme=dark" height="48" alt="LinkedIn"/>
 </a>
@@ -264,19 +262,13 @@ Experience Snapshot
 <a href="mailto:ullasts.2312@gmail.com">
   <img src="https://skillicons.dev/icons?i=gmail&theme=dark" height="48" alt="Email"/>
 </a>
-
-<br/><br/>
-
+<br/>
 *Open to security roles, collaborations, and CTF teams.*
-
 </div>
 
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-
 <div align="center">
-
 <img src="./assets/footer.svg" alt="logout — session closed" width="100%"/>
-
 </div>
 
 <!--
