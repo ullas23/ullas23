@@ -4,14 +4,10 @@
   ║         Purple Team · SOC · AI-Powered Security             ║
   ╚══════════════════════════════════════════════════════════════╝
 -->
-
 <div align="center">
-
 <img src="./assets/banner.svg" alt="ullas23@github — terminal banner" width="100%"/>
-
 </div>
 
-<br/>
 <!--
 <div align="center">
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=800&color=00FF41&center=true&vCenter=true&multiline=false&width=680&lines=Building+Secure+Systems...;Learning+Offensive+Techniques...;Thinking+Like+an+Attacker...;Defending+Like+a+Defender...;Purple+Team+Enthusiast.)](https://git.io/typing-svg)
@@ -21,7 +17,6 @@
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 
 ## `ullas23@github:~$ whoami`
-
 ```bash
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
@@ -52,11 +47,8 @@ Experience Snapshot
   ✓  Conducted workshops & CTFs for the security community
   ✓  National Hackathon Awardee
 ```
-
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-
 ## `ullas23@github:~$ ./mission-control`
-
 ```bash
 ═══════════════════════════════════════════════════════════════
 
@@ -86,13 +78,10 @@ Experience Snapshot
 
 ═══════════════════════════════════════════════════════════════
 ```
-
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-
 ## `ullas23@github:~$ neofetch`
 
 <div align="center">
-
 **Languages**
 <img src="https://skillicons.dev/icons?i=python,c,sqlite&theme=dark" alt="Languages: Python, C, SQLite"/>
 <br/>
@@ -101,9 +90,7 @@ Experience Snapshot
 <br/>
 **Platforms**
 <img src="https://skillicons.dev/icons?i=linux,windows,kali&theme=dark" alt="Platforms: Linux, Windows, Kali"/>
-
 </div>
-
 ```bash
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
@@ -117,13 +104,10 @@ Experience Snapshot
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
-
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
-
 ## `ullas23@github:~$ ls projects/`
 
 <div align="center">
-
 <!--  GuardLink  -->
 <table>
 <tr>
@@ -177,9 +161,6 @@ Experience Snapshot
 </table>
 
 </div>
-
-<br/>
-
 <img src="./assets/divider.svg" alt="divider" width="100%"/>
 
 <!--
