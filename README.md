@@ -94,19 +94,12 @@ Experience Snapshot
 <div align="center">
 
 **Languages**
-
 <img src="https://skillicons.dev/icons?i=python,c,sqlite&theme=dark" alt="Languages: Python, C, SQLite"/>
-
-<br/><br/>
-
+<br/>
 **Frameworks & Tools**
-
 <img src="https://skillicons.dev/icons?i=react,fastapi,git,github,vscode,bash&theme=dark" alt="Frameworks: React, FastAPI, Git, GitHub, VSCode, Bash"/>
-
-<br/><br/>
-
+<br/>
 **Platforms**
-
 <img src="https://skillicons.dev/icons?i=linux,windows,kali&theme=dark" alt="Platforms: Linux, Windows, Kali"/>
 
 </div>
