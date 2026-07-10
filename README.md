@@ -6,137 +6,85 @@
 -->
 <div align="center">
 <img src="./assets/commandline.svg" alt="ullas23@github — terminal" width="100%"/>
-</div>
 
-<img src="./assets/divider.svg" alt="divider" width="100%"/>
+<br/><br/><br/>
 
-## `ullas23@github:~$ neofetch`
+# Technologies
 
-<div align="left">
-
-**Languages**
-
-<img src="https://skillicons.dev/icons?i=python,c,sqlite&theme=dark" alt="Languages: Python, C, SQLite"/>
-<br/>
-
-**Frameworks & Tools**
-
-<img src="https://skillicons.dev/icons?i=react,fastapi,git,github,vscode,bash&theme=dark" alt="Frameworks: React, FastAPI, Git, GitHub, VSCode, Bash"/>
-<br/>
-
-**Platforms**
-
-<img src="https://skillicons.dev/icons?i=linux,windows,kali&theme=dark" alt="Platforms: Linux, Windows, Kali"/>
-<br/>
-
-</div>
-
-```bash
-   Security Toolkit
-   Nmap · Wireshark · Burp Suite · Metasploit · Shodan
-
-   Focus
-   SOC · Network Security · Incident Response
-```
-
-<img src="./assets/divider.svg" alt="divider" width="100%"/>
-
-## `ullas23@github:~$ ls projects/`
-<div align="center">
-<!--  GuardLink  -->
-<table>
-<tr>
-<td valign="top" width="50%">
-
-**🛡️ GuardLink**
-
-AI-powered SIEM platform for real-time log analysis, anomaly detection, threat intelligence correlation, and incident monitoring.
-
-`Python` &nbsp; `FastAPI` &nbsp; `Gemini API` &nbsp; `SIEM` &nbsp; `ML`
+### Languages
+<img src="https://skillicons.dev/icons?i=python,c,sqlite&theme=dark" alt="Python, C, SQLite" />
 
 <br/>
 
-**[→ View Repository](https://github.com/ullas23/GuardLink)**
+### Development
+<img src="https://skillicons.dev/icons?i=react,fastapi,git,github,vscode,bash&theme=dark" alt="React, FastAPI, Git, GitHub, VS Code, Bash" />
 
-</td>
+<br/>
 
-<!--  SEPMS  -->
-<td valign="top" width="50%">
+### Operating Systems
+<img src="https://skillicons.dev/icons?i=ubuntu,kali,windows&theme=dark" alt="Ubuntu, Kali Linux, Windows" />
 
-**🔐 SEPMS**
+<br/><br/><br/>
 
-Award-winning Secure Examination Paper Management System implementing Defense-in-Depth: MFA, RBAC, AES-256, RSA-2048 digital signatures & AI-assisted generation.
+# Security Arsenal
 
-`Python` &nbsp; `SQLite` &nbsp; `AES-256` &nbsp; `RSA-2048` &nbsp; `SHA-256`
+<br/>
 
-**[→ View Repository](https://github.com/ullas23/SEPMS)**
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-**⚡ Samarthya 2026**
-
-Secure Norse mythology-themed event registration platform for IEEE Samarthya 2026. Automated registration workflows and cloud deployment.
-
-`React` &nbsp; `TypeScript` &nbsp; `Vercel` &nbsp; `Google Apps Script`
-
-**[→ View Repository](https://github.com/ullas23/Samarthya2026ieeessitsb)**
-
-</td>
-<td valign="top" width="50%">
-
-**🔭 More Coming...**
-
-Active work in progress. Building security tooling and research projects continuously.
-
-`Stay Tuned`
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<img src="./assets/divider.svg" alt="divider" width="100%"/>
-
-## `ullas23@github:~$ cat philosophy.txt`
-
-```bash
-┌─────────────────────────────────────────────────────────────┐
-│   Think like an attacker.                                   │
-│                                                             │
-│   Build like a defender.                                    │
-│                                                             │
-│   Automate where possible.                                  │
-│                                                             │
-│   Never stop learning.                                      │
-└─────────────────────────────────────────────────────────────┘
-```
-
-<img src="./assets/divider.svg" alt="divider" width="100%"/>
-
-## `ullas23@github:~$ ./connect`
-
-<div align="center">
-<a href="https://www.linkedin.com/in/ullasts">
-  <img src="https://skillicons.dev/icons?i=linkedin&theme=dark" height="48" alt="LinkedIn"/>
+<a href="https://nmap.org" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.simpleicons.org/nmap/cccccc" height="40" alt="Nmap"/>
 </a>
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.wireshark.org" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.simpleicons.org/wireshark/cccccc" height="40" alt="Wireshark"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://portswigger.net/burp" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.simpleicons.org/burpsuite/cccccc" height="40" alt="Burp Suite"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.metasploit.com" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.simpleicons.org/metasploit/cccccc" height="40" alt="Metasploit"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.shodan.io" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.simpleicons.org/shodan/cccccc" height="40" alt="Shodan"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://zeek.org" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.simpleicons.org/zeek/cccccc" height="40" alt="Zeek"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://suricata.io" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.simpleicons.org/suricata/cccccc" height="40" alt="Suricata"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://hashcat.net" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.simpleicons.org/hashcat/cccccc" height="40" alt="Hashcat"/>
+</a>
+
+<br/><br/><br/>
+
+# Connect
+
+<br/>
+
+<a href="https://www.linkedin.com/in/ullasts" target="_blank" rel="noopener noreferrer">
+  <img src="https://skillicons.dev/icons?i=linkedin&theme=dark" height="40" alt="LinkedIn"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="mailto:ullasts.2312@gmail.com">
-  <img src="https://skillicons.dev/icons?i=gmail&theme=dark" height="48" alt="Email"/>
+  <img src="https://skillicons.dev/icons?i=gmail&theme=dark" height="40" alt="Email"/>
 </a>
-<br/><br/>
-*Open to security roles, collaborations, and CTF teams.*
-</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/ullas23">
+  <img src="https://skillicons.dev/icons?i=github&theme=dark" height="40" alt="GitHub"/>
+</a>
 
-<img src="./assets/divider.svg" alt="divider" width="100%"/>
-<div align="center">
+<br/><br/>
+
+*Open to cybersecurity internships, security engineering roles, collaborations and CTFs.*
+
+<br/><br/><br/>
+
 <img src="./assets/footer.svg" alt="logout — session closed" width="100%"/>
 </div>
-
-<!--
-  Profile views counter (optional — enable after publishing)
-  <img src="https://komarev.com/ghpvc/?username=ullas23&color=00FF41&style=flat-square&label=PROFILE+VIEWS"/>
--->
