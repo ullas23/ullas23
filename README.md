@@ -12,46 +12,33 @@
 
 ## Capabilities
 
-### Technologies
-
+**Languages**
 <table>
-  <tr>
-    <td valign="top" width="50%" align="center">
-      <strong>Languages</strong>
-      <br/><br/>
-      <table>
-        <tr align="center">
-          <td><img src="https://skillicons.dev/icons?i=python" height="48" alt="Python"/></td>
-          <td><img src="https://skillicons.dev/icons?i=c" height="48" alt="C"/></td>
-          <td><img src="https://skillicons.dev/icons?i=sqlite" height="48" alt="SQLite"/></td>
-        </tr>
-        <tr align="center">
-          <td>Python</td>
-          <td>C</td>
-          <td>SQLite</td>
-        </tr>
-      </table>
-    </td>
-    <td valign="top" width="50%" align="center">
-      <strong>Operating Systems</strong>
-      <br/><br/>
-      <table>
-        <tr align="center">
-          <td><img src="https://skillicons.dev/icons?i=ubuntu" height="48" alt="Ubuntu"/></td>
-          <td><img src="https://skillicons.dev/icons?i=kali" height="48" alt="Kali Linux"/></td>
-          <td><img src="https://skillicons.dev/icons?i=windows" height="48" alt="Windows"/></td>
-        </tr>
-        <tr align="center">
-          <td>Ubuntu</td>
-          <td>Kali Linux</td>
-          <td>Windows</td>
-        </tr>
-      </table>
-    </td>
+  <tr align="center">
+    <td><img src="https://skillicons.dev/icons?i=python" height="48" alt="Python"/></td>
+    <td><img src="https://skillicons.dev/icons?i=c" height="48" alt="C"/></td>
+    <td><img src="https://skillicons.dev/icons?i=sqlite" height="48" alt="SQLite"/></td>
+  </tr>
+  <tr align="center">
+    <td>Python</td>
+    <td>C</td>
+    <td>SQLite</td>
   </tr>
 </table>
-
-<br/>
+    
+**Operating Systems**
+<table>
+  <tr align="center">
+    <td><img src="https://skillicons.dev/icons?i=ubuntu" height="48" alt="Ubuntu"/></td>
+    <td><img src="https://skillicons.dev/icons?i=kali" height="48" alt="Kali Linux"/></td>
+    <td><img src="https://skillicons.dev/icons?i=windows" height="48" alt="Windows"/></td>
+  </tr>
+  <tr align="center">
+    <td>Ubuntu</td>
+    <td>Kali Linux</td>
+    <td>Windows</td>
+  </tr>
+</table>
 
 **Development**
 <table>
@@ -122,11 +109,7 @@
   </tr>
 </table>
 
-<br/>
-
 *Open to cybersecurity internships, security engineering roles, collaborations and CTFs.*
-
-<br/>
 
 <img src="./assets/footer.svg" alt="logout — session closed" width="100%"/>
 </div>
