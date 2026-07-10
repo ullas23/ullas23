@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 1410" width="860" height="1410">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&amp;display=swap');
+
+      .terminal-bg { fill: #0d0d0d; }
+      .window-bar  { fill: #1a1a1a; }
+      .btn-red     { fill: #ff5f57; }
+      .btn-yellow  { fill: #ffbd2e; }
+      .btn-green   { fill: #28c840; }
+      .title-text  { fill: #555; font-family: 'Fira Code', monospace; font-size: 12px; }
+      .prompt      { fill: #00FF41; font-family: 'Fira Code', monospace; font-size: 15px; }
+      .dim         { fill: #4a8f5a; font-family: 'Fira Code', monospace; font-size: 15px; }
+      .white       { fill: #cccccc; font-family: 'Fira Code', monospace; font-size: 15px; }
+
+      /* ── Login sequence ──────────────────────────────────────── */
+      .l1  { opacity:0; animation: fi .3s ease forwards  .20s; }
+      .l2  { opacity:0; animation: fi .3s ease forwards  .75s; }
+      .l3  { opacity:0; animation: fi .3s ease forwards 1.30s; }
+      .l4  { opacity:0; animation: fi .3s ease forwards 1.80s; }
+      .l5  { opacity:0; animation: fi .3s ease forwards 2.20s; }
+      .l6  { opacity:0; animation: fi .3s ease forwards 2.60s; }
+      .l7  { opacity:0; animation: fi .3s ease forwards 3.00s; }
+      .l8  { opacity:0; animation: fi .2s ease forwards 3.40s; }
+      .l9  { opacity:0; animation: fi .3s ease forwards 7.00s; }
+      .l10 { opacity:0; animation: fi .2s ease forwards 7.40s; }
+
+      /* ── Block progress bar ──────────────────────────────────────
+         39 blocks 14w × 14h, pitch=19, clip 0→736px
+         delay 3.60s · duration 3.20s · done t=6.80s              */
+      .block-mask { animation: revealBlocks 3.20s ease-out forwards 3.60s; }
+      @keyframes revealBlocks {
+        from { width: 0px;   }
+        to   { width: 736px; }
+      }
+
+      /* ── Percentage counter ──────────────────────────────────── */
+      .pct  { opacity:0; }
+      .p0   { animation: cntFlash .80s linear 3.60s both; }
+      .p25  { animation: cntFlash .80s linear 4.40s both; }
+      .p50  { animation: cntFlash .80s linear 5.20s both; }
+      .p75  { animation: cntFlash .80s linear 6.00s both; }
+      .p100 { animation: cntFinal .10s linear 6.80s forwards; }
+
+      /* ── Keyframes ───────────────────────────────────────────── */
+      @keyframes fi {
+        from { opacity:0; transform: translateY(2px); }
+        to   { opacity:1; transform: translateY(0);   }
+      }
+      @keyframes cntFlash {
+        0%   { opacity:0; }  8%  { opacity:1; }
+        88%  { opacity:1; }  100%{ opacity:0; }
+      }
+      @keyframes cntFinal { from{opacity:0;} to{opacity:1;} }
+      @keyframes blink    { 0%,100%{opacity:1;} 50%{opacity:0;} }
+    </style>
+
+    <filter id="borderGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 0.5 0" result="g"/>
+      <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Block reveal clip: 39 portrait blocks 14w×14h, y=256 -->
+    <clipPath id="blockClip">
+      <rect x="44" y="256" width="0" height="14" class="block-mask"/>
+    </clipPath>
+  </defs>
+
+  <!-- ── Window ─────────────────────────────────────────────── -->
+  <rect x="10" y="10" width="840" height="1390" rx="12" ry="12"
+        class="terminal-bg" filter="url(#borderGlow)"/>
+  <rect x="10" y="10" width="840" height="1390" rx="12" ry="12"
+        fill="none" stroke="#00FF41" stroke-width="0.8" stroke-opacity="0.35"/>
+
+  <!-- Title bar -->
+  <rect x="10" y="10" width="840" height="36" rx="12" ry="12" class="window-bar"/>
+  <rect x="10" y="28"  width="840" height="18" class="window-bar"/>
+  <circle cx="36" cy="28" r="7" class="btn-red"/>
+  <circle cx="58" cy="28" r="7" class="btn-yellow"/>
+  <circle cx="80" cy="28" r="7" class="btn-green"/>
+  <text x="430" y="33" text-anchor="middle" class="title-text">ullas23@github — bash — 80×24</text>
+  <line x1="10" y1="46" x2="850" y2="46" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- ════ LOGIN SEQUENCE ══════════════════════════════════════ -->
+  <g class="l1">
+    <text x="32" y="82" class="prompt">❯ <tspan fill="#cccccc">ssh ullas23@github</tspan></text>
+  </g>
+  <g class="l2">
+    <text x="32" y="109" class="dim">Password:  <tspan fill="#cccccc">************</tspan></text>
+  </g>
+  <g class="l3">
+    <text x="32" y="136" class="prompt" font-weight="600">Access Granted.</text>
+  </g>
+  <g class="l4">
+    <text x="32" y="164" class="dim">Initializing Security Workspace...</text>
+  </g>
+  <g class="l5">
+    <text x="32" y="187" class="dim">Loading Intelligence...</text>
+  </g>
+  <g class="l6">
+    <text x="32" y="210" class="dim">Loading Operational Assets...</text>
+  </g>
+  <g class="l7">
+    <text x="32" y="233" class="dim">Initializing Boot Sequence...</text>
+  </g>
+
+  <!-- Loading bar — y=256, height=14, bottom=270 -->
+  <g class="l8">
+    <path d="M42,256 L34,256 L34,270 L42,270"
+          fill="none" stroke="#00FF41" stroke-width="2" stroke-linecap="square"/>
+    <path d="M783,256 L791,256 L791,270 L783,270"
+          fill="none" stroke="#00FF41" stroke-width="2" stroke-linecap="square"/>
+    <g clip-path="url(#blockClip)">
+      <rect x="44"  y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="63"  y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="82"  y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="101" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="120" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="139" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="158" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="177" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="196" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="215" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="234" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="253" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="272" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="291" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="310" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="329" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="348" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="367" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="386" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="405" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="424" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="443" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="462" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="481" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="500" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="519" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="538" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="557" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="576" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="595" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="614" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="633" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="652" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="671" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="690" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="709" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="728" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="747" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+      <rect x="766" y="256" width="14" height="14" rx="1" fill="#d4d4d4"/>
+    </g>
+    <text x="800" y="267" class="prompt pct p0"   font-size="15" font-weight="700">  0%</text>
+    <text x="800" y="267" class="prompt pct p25"  font-size="15" font-weight="700"> 25%</text>
+    <text x="800" y="267" class="prompt pct p50"  font-size="15" font-weight="700"> 50%</text>
+    <text x="800" y="267" class="prompt pct p75"  font-size="15" font-weight="700"> 75%</text>
+    <text x="800" y="267" class="prompt pct p100" font-size="15" font-weight="700">100%</text>
+  </g>
+
+  <g class="l9">
+    <text x="32" y="297" class="prompt" font-weight="600">Successful.</text>
+  </g>
+
+  <!-- ════ WHOAMI ═════════════════════════════════════════════ -->
+  <g class="l10">
+    <text x="32" y="332" class="dim">ullas23@github:~$ <tspan fill="#cccccc">whoami</tspan></text>
+  </g>
+
+  <!-- Box rect -->
+  <rect x="32" y="348" width="700" height="208"
+        fill="none" stroke="#4a8f5a" stroke-width="1.5"
+        style="opacity:0;animation:fi .3s ease forwards 7.80s;"/>
+
+  <!-- Content rows -->
+  <text x="54" y="378" class="dim" style="opacity:0;animation:fi .3s ease forwards 7.95s;">Name     : <tspan fill="#cccccc">Ullas T S</tspan></text>
+  <text x="54" y="401" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.10s;">Alias    : <tspan fill="#cccccc">ullas23</tspan></text>
+  <text x="54" y="424" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.25s;">Role     : <tspan fill="#cccccc">Grey Hat Hacker</tspan></text>
+  <text x="54" y="447" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.40s;">Focus    : <tspan fill="#cccccc">SOC • Network Security • Incident Response</tspan></text>
+  <text x="54" y="470" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.55s;">Interests: <tspan fill="#cccccc">AI × Cybersecurity | Cybersecurity × AI</tspan></text>
+  <text x="54" y="493" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.70s;">Platform : <tspan fill="#cccccc">Linux | Windows</tspan></text>
+  <text x="54" y="516" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.85s;">Lifestyle: <tspan fill="#cccccc">Basketball | CTFs</tspan></text>
+  <text x="54" y="539" class="dim" style="opacity:0;animation:fi .3s ease forwards 9.00s;">Status   : <tspan fill="#cccccc">Learning...</tspan></text>
+
+  <!-- ════ CAT EXPERIENCE.LOG ══════════════════════════════════ -->
+  <g style="opacity:0;animation:fi .3s ease forwards 9.45s;">
+    <text x="32" y="591" class="dim">ullas23@github:~$ <tspan fill="#cccccc">cat experience.log</tspan></text>
+  </g>
+
+  <!-- experience output -->
+  <text x="32" y="614" class="dim"   style="opacity:0;animation:fi .3s ease forwards 9.65s;">Experience Snapshot</text>
+  <text x="32" y="637" class="dim"   style="opacity:0;animation:fi .3s ease forwards 9.80s;">───────────────────────────────────────────────────────────────</text>
+  <text x="32" y="660" class="white" style="opacity:0;animation:fi .3s ease forwards 9.95s;">  ✓  Built an AI-powered SIEM (GuardLink)</text>
+  <text x="32" y="683" class="white" style="opacity:0;animation:fi .3s ease forwards 10.10s;">  ✓  Built an award-winning Secure Examination Paper Management System</text>
+  <text x="32" y="706" class="white" style="opacity:0;animation:fi .3s ease forwards 10.25s;">  ✓  Helped establish ROOTRON, a student-founded cybersecurity technical club</text>
+  <text x="32" y="729" class="white" style="opacity:0;animation:fi .3s ease forwards 10.40s;">  ✓  Conducted workshops &amp; CTFs for the security community</text>
+  <text x="32" y="752" class="white" style="opacity:0;animation:fi .3s ease forwards 10.55s;">  ✓  National Hackathon Awardee</text>
+
+  <!-- ════ MISSION CONTROL ═════════════════════════════════════ -->
+  <g style="opacity:0;animation:fi .3s ease forwards 11.00s;">
+    <text x="32" y="787" class="dim">ullas23@github:~$ <tspan fill="#cccccc">./mission-control</tspan></text>
+  </g>
+
+  <text x="32" y="810"  class="dim"    style="opacity:0;animation:fi .3s ease forwards 11.20s;">═══════════════════════════════════════════════════════════════</text>
+  <text x="32" y="845"  class="prompt" style="opacity:0;animation:fi .3s ease forwards 11.40s;">  [ ACTIVE OBJECTIVES ]</text>
+  <text x="32" y="868"  class="white"  style="opacity:0;animation:fi .3s ease forwards 11.60s;">  ├──  AI-powered Security Solutions</text>
+  <text x="32" y="891"  class="white"  style="opacity:0;animation:fi .3s ease forwards 11.75s;">  ├──  Network Security &amp; Traffic Analysis</text>
+  <text x="32" y="914"  class="white"  style="opacity:0;animation:fi .3s ease forwards 11.90s;">  ├──  Security Operations (SOC)</text>
+  <text x="32" y="937"  class="white"  style="opacity:0;animation:fi .3s ease forwards 12.05s;">  ├──  Threat Detection &amp; Threat Hunting</text>
+  <text x="32" y="960"  class="white"  style="opacity:0;animation:fi .3s ease forwards 12.20s;">  ├──  Incident Response</text>
+  <text x="32" y="983"  class="white"  style="opacity:0;animation:fi .3s ease forwards 12.35s;">  ├──  Malware Analysis</text>
+  <text x="32" y="1006" class="white"  style="opacity:0;animation:fi .3s ease forwards 12.50s;">  ├──  Identity &amp; Access Management</text>
+  <text x="32" y="1029" class="white"  style="opacity:0;animation:fi .3s ease forwards 12.65s;">  └──  Cloud Systems</text>
+
+  <text x="32" y="1064" class="prompt" style="opacity:0;animation:fi .3s ease forwards 12.80s;">  [ NEXT TARGETS ]</text>
+  <text x="32" y="1087" class="dim"    style="opacity:0;animation:fi .3s ease forwards 12.95s;">  ├── Cloud Security</text>
+  <text x="32" y="1110" class="dim"    style="opacity:0;animation:fi .3s ease forwards 13.10s;">  ├── Reverse Engineering</text>
+  <text x="32" y="1133" class="dim"    style="opacity:0;animation:fi .3s ease forwards 13.25s;">  ├── Risk Assessment</text>
+  <text x="32" y="1156" class="dim"    style="opacity:0;animation:fi .3s ease forwards 13.40s;">  ├── Security Compliance</text>
+  <text x="32" y="1179" class="dim"    style="opacity:0;animation:fi .3s ease forwards 13.55s;">  └── Advanced OWASP Top 10</text>
+
+  <text x="32" y="1214" class="prompt" style="opacity:0;animation:fi .3s ease forwards 13.70s;">  [ CURRENT MISSION ]</text>
+  <text x="32" y="1237" class="white"  style="opacity:0;animation:fi .3s ease forwards 13.85s;">  Designing security solutions that DETECT, ANALYZE and RESPOND</text>
+  <text x="32" y="1260" class="white"  style="opacity:0;animation:fi .3s ease forwards 14.00s;">  to modern cyber threats while continuously learning how</text>
+  <text x="32" y="1283" class="white"  style="opacity:0;animation:fi .3s ease forwards 14.15s;">  attackers think.</text>
+  <text x="32" y="1318" class="dim"    style="opacity:0;animation:fi .3s ease forwards 14.30s;">═══════════════════════════════════════════════════════════════</text>
+
+  <!-- ════ FINAL PROMPT ════════════════════════════════════════ -->
+  <g style="opacity:0;animation:fi .2s ease forwards 15.00s;">
+    <text x="32" y="1353" class="dim">ullas23@github:~$ <tspan fill="#00FF41"
+        style="animation:blink 1s step-end infinite 15.20s;opacity:0;">█</tspan></text>
+  </g>
+</svg>
