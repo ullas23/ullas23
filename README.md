@@ -14,25 +14,47 @@
 
 ### Technologies
 
+**Languages**
+<table>
+  <tr align="center">
+    <td><img src="https://skillicons.dev/icons?i=python" height="48" alt="Python"/></td>
+    <td><img src="https://skillicons.dev/icons?i=c" height="48" alt="C"/></td>
+    <td><img src="https://skillicons.dev/icons?i=sqlite" height="48" alt="SQLite"/></td>
+  </tr>
+  <tr align="center">
+    <td>Python</td>
+    <td>C</td>
+    <td>SQLite</td>
+  </tr>
+</table>
+
+<br/>
+
 <table>
   <tr>
-    <td valign="top" width="50%" align="center">
-      <strong>Languages</strong>
+    <td valign="top" width="67%" align="center">
+      <strong>Development</strong>
       <br/><br/>
       <table>
         <tr align="center">
-          <td><img src="https://skillicons.dev/icons?i=python" height="48" alt="Python"/></td>
-          <td><img src="https://skillicons.dev/icons?i=c" height="48" alt="C"/></td>
-          <td><img src="https://skillicons.dev/icons?i=sqlite" height="48" alt="SQLite"/></td>
+          <td><img src="https://skillicons.dev/icons?i=react" height="48" alt="React"/></td>
+          <td><img src="https://skillicons.dev/icons?i=fastapi" height="48" alt="FastAPI"/></td>
+          <td><img src="https://skillicons.dev/icons?i=git" height="48" alt="Git"/></td>
+          <td><img src="https://skillicons.dev/icons?i=github" height="48" alt="GitHub"/></td>
+          <td><img src="https://skillicons.dev/icons?i=vscode" height="48" alt="VS Code"/></td>
+          <td><img src="https://skillicons.dev/icons?i=bash" height="48" alt="Bash"/></td>
         </tr>
         <tr align="center">
-          <td>Python</td>
-          <td>C</td>
-          <td>SQLite</td>
+          <td>React</td>
+          <td>FastAPI</td>
+          <td>Git</td>
+          <td>GitHub</td>
+          <td>VS Code</td>
+          <td>Bash</td>
         </tr>
       </table>
     </td>
-    <td valign="top" width="50%" align="center">
+    <td valign="top" width="33%" align="center">
       <strong>Operating Systems</strong>
       <br/><br/>
       <table>
@@ -48,28 +70,6 @@
         </tr>
       </table>
     </td>
-  </tr>
-</table>
-
-<br/>
-
-**Development**
-<table>
-  <tr align="center">
-    <td><img src="https://skillicons.dev/icons?i=react" height="48" alt="React"/></td>
-    <td><img src="https://skillicons.dev/icons?i=fastapi" height="48" alt="FastAPI"/></td>
-    <td><img src="https://skillicons.dev/icons?i=git" height="48" alt="Git"/></td>
-    <td><img src="https://skillicons.dev/icons?i=github" height="48" alt="GitHub"/></td>
-    <td><img src="https://skillicons.dev/icons?i=vscode" height="48" alt="VS Code"/></td>
-    <td><img src="https://skillicons.dev/icons?i=bash" height="48" alt="Bash"/></td>
-  </tr>
-  <tr align="center">
-    <td>React</td>
-    <td>FastAPI</td>
-    <td>Git</td>
-    <td>GitHub</td>
-    <td>VS Code</td>
-    <td>Bash</td>
   </tr>
 </table>
 
