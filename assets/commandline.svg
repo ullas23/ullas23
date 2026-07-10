@@ -1,17 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 1000" width="860" height="1000">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 1080" width="860" height="1080">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&amp;display=swap');
 
-      .terminal-bg { fill: #0D1117; }
+      .terminal-bg { fill: #0B0D16; }
       .window-bar  { fill: #161B22; }
-      .btn-red     { fill: #ff5f57; }
-      .btn-yellow  { fill: #ffbd2e; }
-      .btn-green   { fill: #28c840; }
+      .btn-red     { fill: #FF5F56; }
+      .btn-yellow  { fill: #FFBD2E; }
+      .btn-green   { fill: #27C93F; }
       .title-text  { fill: #8B949E; font-family: 'Fira Code', monospace; font-size: 11px; }
       .prompt      { fill: #00FF41; font-family: 'Fira Code', monospace; font-size: 13px; }
       .dim         { fill: #8B949E; font-family: 'Fira Code', monospace; font-size: 13px; }
       .white       { fill: #C9D1D9; font-family: 'Fira Code', monospace; font-size: 13px; }
+      .terminal-cursor { opacity: 0; animation: blink 1s step-end infinite 12.60s; }
 
       /* ── Login sequence ──────────────────────────────────────── */
       .l1  { opacity:0; animation: fi .3s ease forwards  .20s; }
@@ -26,12 +27,12 @@
       .l10 { opacity:0; animation: fi .2s ease forwards 6.30s; }
 
       /* ── Block progress bar ──────────────────────────────────────
-         39 blocks 14w × 14h, pitch=19, clip 0→736px
+         35 blocks 14w × 14h, pitch=19, clip 0→660px
          delay 3.30s · duration 2.40s · done t=5.70s              */
       .block-mask { animation: revealBlocks 2.40s ease-out forwards 3.30s; }
       @keyframes revealBlocks {
         from { width: 0px;   }
-        to   { width: 736px; }
+        to   { width: 660px; }
       }
 
       /* ── Percentage counter ──────────────────────────────────── */
@@ -62,17 +63,17 @@
       <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <!-- Block reveal clip: 39 portrait blocks 14w×14h, y=215 -->
+    <!-- Block reveal clip: 35 portrait blocks 14w×14h, y=215 -->
     <clipPath id="blockClip">
       <rect x="44" y="215" width="0" height="14" class="block-mask"/>
     </clipPath>
   </defs>
 
   <!-- ── Window ─────────────────────────────────────────────── -->
-  <rect x="10" y="10" width="840" height="980" rx="12" ry="12"
+  <rect x="10" y="10" width="840" height="1060" rx="12" ry="12"
         class="terminal-bg" filter="url(#borderGlow)"/>
-  <rect x="10" y="10" width="840" height="980" rx="12" ry="12"
-        fill="none" stroke="#8B949E" stroke-width="0.8" stroke-opacity="0.3"/>
+  <rect x="10" y="10" width="840" height="1060" rx="12" ry="12"
+        fill="none" stroke="#30363D" stroke-width="1"/>
 
   <!-- Title bar -->
   <rect x="10" y="10" width="840" height="36" rx="12" ry="12" class="window-bar"/>
@@ -80,8 +81,8 @@
   <circle cx="36" cy="28" r="7" class="btn-red"/>
   <circle cx="58" cy="28" r="7" class="btn-yellow"/>
   <circle cx="80" cy="28" r="7" class="btn-green"/>
-  <text x="430" y="33" text-anchor="middle" class="title-text">ullas23@github — bash — 80×24</text>
-  <line x1="10" y1="46" x2="850" y2="46" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="430" y="33" text-anchor="middle" class="title-text">ullas23@github:~ — bash — 80×24</text>
+  <line x1="10" y1="46" x2="850" y2="46" stroke="#30363D" stroke-width="1"/>
 
 
   <!-- ════ LOGIN SEQUENCE ══════════════════════════════════════ -->
@@ -95,23 +96,23 @@
     <text x="32" y="120" class="prompt" font-weight="600">Access Granted.</text>
   </g>
   <g class="l4">
-    <text x="32" y="139" class="dim">Initializing Security Workspace......................<tspan fill="#00FF41">DONE</tspan></text>
+    <text x="32" y="139" font-family="'Fira Code', monospace" font-size="13px"><tspan fill="#8B949E">[00:00:01]</tspan> <tspan fill="#8B949E">Initializing Security Workspace...........</tspan><tspan fill="#00FF41">DONE</tspan></text>
   </g>
   <g class="l5">
-    <text x="32" y="158" class="dim">Loading Intelligence.................................<tspan fill="#00FF41">DONE</tspan></text>
+    <text x="32" y="158" font-family="'Fira Code', monospace" font-size="13px"><tspan fill="#8B949E">[00:00:02]</tspan> <tspan fill="#8B949E">Loading Intelligence......................</tspan><tspan fill="#00FF41">DONE</tspan></text>
   </g>
   <g class="l6">
-    <text x="32" y="177" class="dim">Loading Operational Assets...........................<tspan fill="#00FF41">DONE</tspan></text>
+    <text x="32" y="177" font-family="'Fira Code', monospace" font-size="13px"><tspan fill="#8B949E">[00:00:03]</tspan> <tspan fill="#8B949E">Loading Operational Assets................</tspan><tspan fill="#00FF41">DONE</tspan></text>
   </g>
   <g class="l7">
-    <text x="32" y="196" class="dim">Initializing Boot Sequence...........................<tspan fill="#00FF41">DONE</tspan></text>
+    <text x="32" y="196" font-family="'Fira Code', monospace" font-size="13px"><tspan fill="#8B949E">[00:00:04]</tspan> <tspan fill="#8B949E">Initializing Boot Sequence................</tspan><tspan fill="#00FF41">DONE</tspan></text>
   </g>
 
   <!-- Loading bar — y=215, height=14, bottom=229 -->
   <g class="l8">
     <path d="M40,215 L32,215 L32,229 L40,229"
           fill="none" stroke="#00FF41" stroke-width="2" stroke-linecap="square"/>
-    <path d="M783,215 L791,215 L791,229 L783,229"
+    <path d="M708,215 L716,215 L716,229 L708,229"
           fill="none" stroke="#00FF41" stroke-width="2" stroke-linecap="square"/>
     <g clip-path="url(#blockClip)">
       <rect x="44"  y="215" width="14" height="14" rx="1" fill="#C9D1D9"/>
@@ -149,16 +150,12 @@
       <rect x="652" y="215" width="14" height="14" rx="1" fill="#C9D1D9"/>
       <rect x="671" y="215" width="14" height="14" rx="1" fill="#C9D1D9"/>
       <rect x="690" y="215" width="14" height="14" rx="1" fill="#C9D1D9"/>
-      <rect x="709" y="215" width="14" height="14" rx="1" fill="#C9D1D9"/>
-      <rect x="728" y="215" width="14" height="14" rx="1" fill="#C9D1D9"/>
-      <rect x="747" y="215" width="14" height="14" rx="1" fill="#C9D1D9"/>
-      <rect x="766" y="215" width="14" height="14" rx="1" fill="#C9D1D9"/>
     </g>
-    <text x="800" y="226" class="prompt pct p0"   font-size="13" font-weight="700">  0%</text>
-    <text x="800" y="226" class="prompt pct p25"  font-size="13" font-weight="700"> 25%</text>
-    <text x="800" y="226" class="prompt pct p50"  font-size="13" font-weight="700"> 50%</text>
-    <text x="800" y="226" class="prompt pct p75"  font-size="13" font-weight="700"> 75%</text>
-    <text x="800" y="226" class="prompt pct p100" font-size="13" font-weight="700">100%</text>
+    <text x="730" y="226" class="prompt pct p0"   font-size="13" font-weight="700">  0%</text>
+    <text x="730" y="226" class="prompt pct p25"  font-size="13" font-weight="700"> 25%</text>
+    <text x="730" y="226" class="prompt pct p50"  font-size="13" font-weight="700"> 50%</text>
+    <text x="730" y="226" class="prompt pct p75"  font-size="13" font-weight="700"> 75%</text>
+    <text x="730" y="226" class="prompt pct p100" font-size="13" font-weight="700">100%</text>
   </g>
 
   <g class="l9">
@@ -170,20 +167,15 @@
     <text x="32" y="267" class="dim">ullas23@github:~$ <tspan fill="#00FF41">whoami</tspan></text>
   </g>
 
-  <!-- Box rect — x=32 to 732 (width=700), y=278 to 442 (height=164) -->
-  <rect x="32" y="278" width="700" height="164"
-        fill="none" stroke="#8B949E" stroke-width="1.2"
-        style="opacity:0;animation:fi .3s ease forwards 6.40s;"/>
-
-  <!-- Content rows -->
-  <text y="298" style="opacity:0;animation:fi .3s ease forwards 6.50s;"><tspan x="54" class="dim">Name</tspan><tspan x="142" class="dim">:</tspan><tspan x="162" class="white">Ullas T S</tspan></text>
-  <text y="317" style="opacity:0;animation:fi .3s ease forwards 6.60s;"><tspan x="54" class="dim">Alias</tspan><tspan x="142" class="dim">:</tspan><tspan x="162" class="white">ullas23</tspan></text>
-  <text y="336" style="opacity:0;animation:fi .3s ease forwards 6.70s;"><tspan x="54" class="dim">Role</tspan><tspan x="142" class="dim">:</tspan><tspan x="162" class="white">Grey Hat &amp; Purple Teamer</tspan></text>
-  <text y="355" style="opacity:0;animation:fi .3s ease forwards 6.80s;"><tspan x="54" class="dim">Focus</tspan><tspan x="142" class="dim">:</tspan><tspan x="162" class="white">SOC • Network Security • Incident Response</tspan></text>
-  <text y="374" style="opacity:0;animation:fi .3s ease forwards 6.90s;"><tspan x="54" class="dim">Interests</tspan><tspan x="142" class="dim">:</tspan><tspan x="162" class="white">AI × Cybersecurity | Cybersecurity × AI</tspan></text>
-  <text y="393" style="opacity:0;animation:fi .3s ease forwards 7.00s;"><tspan x="54" class="dim">Platform</tspan><tspan x="142" class="dim">:</tspan><tspan x="162" class="white">Linux • Windows</tspan></text>
-  <text y="412" style="opacity:0;animation:fi .3s ease forwards 7.10s;"><tspan x="54" class="dim">Lifestyle</tspan><tspan x="142" class="dim">:</tspan><tspan x="162" class="white">Basketball | CTFs</tspan></text>
-  <text y="431" style="opacity:0;animation:fi .3s ease forwards 7.20s;"><tspan x="54" class="dim">Status</tspan><tspan x="142" class="dim">:</tspan><tspan x="162" fill="#00FF41" font-family="'Fira Code', monospace" font-size="13px">Learning...</tspan></text>
+  <!-- Content rows (box removed) -->
+  <text y="298" style="opacity:0;animation:fi .3s ease forwards 6.50s;"><tspan x="32" class="dim">Name</tspan><tspan x="120" class="dim">:</tspan><tspan x="140" class="white">Ullas T S</tspan></text>
+  <text y="317" style="opacity:0;animation:fi .3s ease forwards 6.60s;"><tspan x="32" class="dim">Alias</tspan><tspan x="120" class="dim">:</tspan><tspan x="140" class="white">ullas23</tspan></text>
+  <text y="336" style="opacity:0;animation:fi .3s ease forwards 6.70s;"><tspan x="32" class="dim">Role</tspan><tspan x="120" class="dim">:</tspan><tspan x="140" class="white">Grey Hat • Purple Team Enthusiast</tspan></text>
+  <text y="355" style="opacity:0;animation:fi .3s ease forwards 6.80s;"><tspan x="32" class="dim">Focus</tspan><tspan x="120" class="dim">:</tspan><tspan x="140" class="white">SOC • Network Security • Incident Response</tspan></text>
+  <text y="374" style="opacity:0;animation:fi .3s ease forwards 6.90s;"><tspan x="32" class="dim">Interests</tspan><tspan x="120" class="dim">:</tspan><tspan x="140" class="white">AI × Cybersecurity | Cybersecurity × AI</tspan></text>
+  <text y="393" style="opacity:0;animation:fi .3s ease forwards 7.00s;"><tspan x="32" class="dim">Platform</tspan><tspan x="120" class="dim">:</tspan><tspan x="140" class="white">Linux • Windows</tspan></text>
+  <text y="412" style="opacity:0;animation:fi .3s ease forwards 7.10s;"><tspan x="32" class="dim">Lifestyle</tspan><tspan x="120" class="dim">:</tspan><tspan x="140" class="white">Basketball | CTFs</tspan></text>
+  <text y="431" style="opacity:0;animation:fi .3s ease forwards 7.20s;"><tspan x="32" class="dim">Status</tspan><tspan x="120" class="dim">:</tspan><tspan x="140" fill="#00FF41" font-family="'Fira Code', monospace" font-size="13px">Learning...</tspan></text>
 
   <!-- ════ CAT EXPERIENCE.LOG ══════════════════════════════════ -->
   <g style="opacity:0;animation:fi .3s ease forwards 7.60s;">
@@ -191,12 +183,12 @@
   </g>
 
   <!-- experience output -->
-  <text x="32" y="485" class="dim" style="opacity:0;animation:fi .3s ease forwards 7.80s;">Experience Snapshot</text>
-  <text x="32" y="498" class="prompt" style="opacity:0;animation:fi .3s ease forwards 7.90s;">──────────────────────────────────────────────────────────────────────────────</text>
-  <text x="32" y="511" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.00s;">  ✓  <tspan fill="#C9D1D9">Built an AI-powered SIEM (GuardLink)</tspan></text>
-  <text x="32" y="530" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.10s;">  ✓  <tspan fill="#C9D1D9">Built an award-winning Secure Examination Paper Management System</tspan></text>
-  <text x="32" y="549" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.20s;">  ✓  <tspan fill="#C9D1D9">Helped establish ROOTRON, a student-founded cybersecurity technical club</tspan></text>
-  <text x="32" y="568" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.30s;">  ✓  <tspan fill="#C9D1D9">Conducted workshops &amp; CTFs for the security community</tspan></text>
+  <text x="32" y="485" class="dim" style="opacity:0;animation:fi .3s ease forwards 7.80s;">Snapshot-3</text>
+  <line x1="32" y1="493" x2="542" y2="493" stroke="#8B949E" stroke-width="1.2" stroke-dasharray="8,2" style="opacity:0;animation:fi .3s ease forwards 7.90s;"/>
+  <text x="32" y="511" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.00s;">  ✓  <tspan fill="#C9D1D9">Developed GuardLink — AI-powered SIEM</tspan></text>
+  <text x="32" y="530" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.10s;">  ✓  <tspan fill="#C9D1D9">Built SEPMS — Award-winning secure exam platform</tspan></text>
+  <text x="32" y="549" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.20s;">  ✓  <tspan fill="#C9D1D9">Helped establish ROOTRON — student-led cybersecurity club</tspan></text>
+  <text x="32" y="568" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.30s;">  ✓  <tspan fill="#C9D1D9">Delivered workshops &amp; CTFs</tspan></text>
   <text x="32" y="587" class="dim" style="opacity:0;animation:fi .3s ease forwards 8.40s;">  ✓  <tspan fill="#C9D1D9">National Hackathon Awardee</tspan></text>
 
   <!-- ════ MISSION CONTROL ═════════════════════════════════════ -->
@@ -225,9 +217,16 @@
   <text x="32" y="944" class="white"  style="opacity:0;animation:fi .3s ease forwards 10.80s;">  Designing security solutions that DEFEND, ANALYSE and RESPOND to modern cyber threats</text>
   <text x="32" y="963" class="white"  style="opacity:0;animation:fi .3s ease forwards 10.90s;">  while continuously learning how att@ckers think.</text>
 
-  <!-- ════ FINAL PROMPT ════════════════════════════════════════ -->
+  <!-- ════ LOGOUT SEQUENCE ═════════════════════════════════════ -->
   <g style="opacity:0;animation:fi .2s ease forwards 11.30s;">
-    <text x="32" y="982" class="dim">ullas23@github:~$ <tspan fill="#00FF41"
-        style="animation:blink 1s step-end infinite 11.50s;opacity:0;">█</tspan></text>
+    <text y="987"><tspan x="32" class="dim">ullas23@github:~$ </tspan><tspan x="172" class="prompt">logout</tspan></text>
   </g>
+  <g style="opacity:0;animation:fi .3s ease forwards 11.90s;">
+    <text x="32" y="1006" class="prompt" font-weight="600">Workspace Locked.</text>
+  </g>
+  <g style="opacity:0;animation:fi .3s ease forwards 12.30s;">
+    <text x="32" y="1025" class="prompt" font-weight="600">Session terminated.</text>
+  </g>
+  <text x="32" y="1044" fill="#8B949E" font-family="'Fira Code', monospace" font-size="13px" style="opacity:0;animation:fi .3s ease forwards 12.60s;">❯</text>
+  <rect x="50" y="1031" width="8" height="14" fill="#00FF41" class="terminal-cursor"/>
 </svg>
