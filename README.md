@@ -113,12 +113,12 @@
   <tr align="center">
     <td><a href="https://www.linkedin.com/in/ullasts" target="_blank" rel="noopener noreferrer"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" height="40" alt="LinkedIn"/></a></td>
     <td><a href="mailto:ullasts.2312@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" height="40" alt="Email"/></a></td>
-    <td><a href="https://github.com/ullas23"><img src="https://skillicons.dev/icons?i=github&theme=dark" height="40" alt="GitHub"/></a></td>
+    <td><a href="https://www.instagram.com/twotrey_llas" target="_blank" rel="noopener"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" height="40" alt="Instagram"/></a></td>
   </tr>
   <tr align="center">
     <td>LinkedIn</td>
     <td>Email</td>
-    <td>GitHub</td>
+    <td>Instagram</td>
   </tr>
 </table>
 
