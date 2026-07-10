@@ -31,35 +31,41 @@
 <br/>
 
 <a href="https://nmap.org" target="_blank" rel="noopener noreferrer">
-  <img src="https://cdn.simpleicons.org/nmap/cccccc" height="40" alt="Nmap"/>
+  <img src="./assets/nmap-logo.svg" height="48" alt="Nmap"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.wireshark.org" target="_blank" rel="noopener noreferrer">
-  <img src="https://cdn.simpleicons.org/wireshark/cccccc" height="40" alt="Wireshark"/>
+  <img src="./assets/wireshark-logo.svg" height="48" alt="Wireshark"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://portswigger.net/burp" target="_blank" rel="noopener noreferrer">
-  <img src="https://cdn.simpleicons.org/burpsuite/cccccc" height="40" alt="Burp Suite"/>
+  <img src="./assets/burpsuite-logo.svg" height="48" alt="Burp Suite"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.metasploit.com" target="_blank" rel="noopener noreferrer">
-  <img src="https://cdn.simpleicons.org/metasploit/cccccc" height="40" alt="Metasploit"/>
+  <img src="./assets/metasploit-logo.svg" height="48" alt="Metasploit"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.shodan.io" target="_blank" rel="noopener noreferrer">
-  <img src="https://cdn.simpleicons.org/shodan/cccccc" height="40" alt="Shodan"/>
+  <img src="./assets/shodan-logo.svg" height="48" alt="Shodan"/>
 </a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<br/><br/>
+
 <a href="https://zeek.org" target="_blank" rel="noopener noreferrer">
-  <img src="https://cdn.simpleicons.org/zeek/cccccc" height="40" alt="Zeek"/>
+  <img src="./assets/zeek-logo.svg" height="48" alt="Zeek"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://suricata.io" target="_blank" rel="noopener noreferrer">
-  <img src="https://cdn.simpleicons.org/suricata/cccccc" height="40" alt="Suricata"/>
+  <img src="./assets/suricata-logo.svg" height="48" alt="Suricata"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://hashcat.net" target="_blank" rel="noopener noreferrer">
-  <img src="https://cdn.simpleicons.org/hashcat/cccccc" height="40" alt="Hashcat"/>
+  <img src="./assets/hashcat-logo.svg" height="48" alt="Hashcat"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/OJ/gobuster" target="_blank" rel="noopener noreferrer">
+  <img src="./assets/gobuster-logo.svg" height="48" alt="Gobuster"/>
 </a>
 
 <br/><br/><br/>
