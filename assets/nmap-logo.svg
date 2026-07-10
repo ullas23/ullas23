@@ -24,7 +24,9 @@
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/home/david/nmap-logo.png"
    inkscape:export-xdpi="89.900002"
-   inkscape:export-ydpi="89.900002"><metadata
+   inkscape:export-ydpi="89.900002">
+  <rect x="0.0" y="0.0" width="437.5713" height="203.2178" fill="#ffffff" rx="27.34820625" ry="12.7011125"/>
+  <g transform="translate(39.3814, 18.2896) scale(0.8200)"><metadata
    id="metadata657"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
@@ -2072,4 +2074,6 @@
          y="231.72029"
          style="font-size:86.27305603px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:url(#linearGradient3467);fill-opacity:1;stroke:none;stroke-width:1.86042225;stroke-miterlimit:4;stroke-dasharray:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold">NMAP</tspan></text>
 </g></g>
+
+  </g>
 </svg>
