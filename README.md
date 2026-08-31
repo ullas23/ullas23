@@ -91,15 +91,15 @@
 &nbsp;&nbsp;
 <a href="https://www.instagram.com/twotrey_llas" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/instagram/E1306C" height="40" alt="Instagram"/></a>
 &nbsp;&nbsp;
-<a href="#" target="_blank" rel="noopener noreferrer"><img src="./assets/tryhackme-logo.svg" height="40" alt="TryHackMe"/></a>
+<a href="https://tryhackme.com/p/The1Neo" target="_blank" rel="noopener noreferrer"><img src="./assets/tryhackme-logo.svg" height="40" alt="TryHackMe"/></a>
 &nbsp;&nbsp;
-<a href="#" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/hackerrank/2EC866" height="40" alt="HackerRank"/></a>
+<a href="https://www.credly.com/users/ullasts" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/credly/FF6B00" height="40" alt="Credly"/></a>
+<!--<a href="#" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/hackerrank/2EC866" height="40" alt="HackerRank"/></a>
 &nbsp;&nbsp;
 <a href="#" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/leetcode/FFA116" height="40" alt="LeetCode"/></a>
 &nbsp;&nbsp;
-<a href="#" target="_blank" rel="noopener noreferrer"><img src="./assets/neetcode-logo.svg" height="40" alt="Neetcode"/></a>
+<a href="#" target="_blank" rel="noopener noreferrer"><img src="./assets/neetcode-logo.svg" height="40" alt="Neetcode"/></a>-->
 &nbsp;&nbsp;
-<a href="#" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/credly/FF6B00" height="40" alt="Credly"/></a>
 
 <br/><br/>
 
