@@ -10,6 +10,56 @@
 <p><b>Cybersecurity • AI • Network Defense • Purple Team</b></p>
 </div>
 
+## `whoami`
+
+```bash
+ullas23@github:~$ whoami
+
+Name      : Ullas T S
+Alias     : ullas23
+Role      : Grey Hat • Purple Team Enthusiast
+Focus     : SOC • Network Security • Incident Response
+Interests : AI × Cybersecurity | Cybersecurity × AI
+Platform  : Linux • Windows
+Lifestyle : Basketball | CTFs
+Status    : Learning...
+```
+
+```bash
+ullas23@github:~$ cat experience.log
+
+  ✓  Developed GuardLink — AI-powered SIEM
+  ✓  Built SEPMS — Award-winning secure exam platform
+  ✓  Helped establish ROOTRON — student-led cybersecurity club
+  ✓  Delivered workshops & CTFs
+  ✓  National Hackathon Awardee
+```
+
+```bash
+ullas23@github:~$ ./mission-control
+
+  [ ACTIVE OBJECTIVES ]
+  ├──  AI-powered Security Solutions
+  ├──  Network Security & Traffic Analysis
+  ├──  Security Operations (SOC)
+  ├──  Threat Detection & Threat Hunting
+  ├──  Incident Response
+  ├──  Malware Analysis
+  ├──  Identity & Access Management
+  └──  Cloud Systems
+
+  [ NEXT TARGETS ]
+  ├──  Cloud Security
+  ├──  Reverse Engineering
+  ├──  Risk Assessment
+  ├──  Security Compliance
+  └──  Advanced OWASP Top 10
+
+  [ CURRENT MISSION ]
+  Designing security solutions that DEFEND, ANALYSE and RESPOND to modern
+  cyber threats while continuously learning how attackers think.
+```
+
 ## Capabilities
 
 <div align="left">
